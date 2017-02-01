@@ -14,8 +14,19 @@ $POST = new Post(get_post());
 
     <?php wp_head(); ?>
 
+    <?php require "class/requirements.php"; ?>
+
 </head>
 <body>
+
+<div id="container" class="_container">
+
+    <header id="main-header">
+
+    </header>
+
+    <main id="main-content">
+
 
 
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Index
+ * Template Name: Project
  *
  * @package WordPress
  * @subpackage BOA
@@ -8,7 +8,6 @@
  */
 
 get_header();
-
 
 
 get_footer();
