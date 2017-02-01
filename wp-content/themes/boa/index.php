@@ -8,7 +8,6 @@
 
 
         <h1>Welcome toto</h1>
-        header.php
 
 
 </body>
