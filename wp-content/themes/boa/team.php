@@ -1,12 +1,11 @@
 <?php
 /**
- * Template Name : team
+ * Template Name: Team
  *
- * @package wordPress
+ * @package WordPress
  * @subpackage BOA
- * @since 1.0
+ * @since BOA 1.0
  */
-
 
 get_header();
 
