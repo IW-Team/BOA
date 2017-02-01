@@ -1,0 +1,264 @@
+// @TODO : Ajout de la classe gutter
+@mixin grid (
+  $gutter: $gutter,
+  $breakpoints: $breakpoints
+) {
+  ._container-flex {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    [class*='_box-']{
+      // Alignement vertical de chaque item
+      &._align-top {
+        align-self: flex-start;
+      }
+      &._align-center {
+        align-self: center;
+      }
+      &._align-bottom {
+        align-self: flex-end;
+      }
+    }
+    @for $j from 1 through 100 {
+      ._box-#{$j} {
+        width: unquote("#{$j}%");
+      }
+    }
+  }
+
+  // Forcer le retour à la ligne
+  ._wrap { flex-flow: row wrap; }
+  // Empêcher le retour à la ligne
+  ._no-wrap { flex-flow: row nowrap; }
+
+  // Alignement vertical des enfants
+  ._align-top { align-items: flex-start; }
+  ._align-center { align-items: center; }
+  ._align-bottom { align-items: flex-end; }
+
+  // Alignement horizontale des enfants
+  ._pull-left { justify-content: flex-start; }
+  ._pull-center { justify-content: center; }
+  ._pull-right { justify-content: flex-end; }
+
+  // Gestion des collapses
+  ._collapse { justify-content: space-between; }
+  ._no-collapse { justify-content: space-around; }
+
+  // Gestion du display
+  ._hide{ display: none; }
+  ._show-block{ display: block; }
+  ._show-inline{ display: inline; }
+
+  // Gestion du text-align
+  ._text-left { text-align: left; }
+  ._text-center { text-align: center; }
+  ._text-right { text-align: right; }
+
+  // Gestion des Margins et paddings
+  @each $item in $margins-paddings {
+    $px: px;
+    @if($item == auto){ $px: null; }
+    ._m-#{$item} { margin: #{$item}#{$px}; }
+    ._m-t-#{$item} { margin-top: #{$item}#{$px}; }
+    ._m-r-#{$item} { margin-right: #{$item}#{$px}; }
+    ._m-b-#{$item} { margin-bottom: #{$item}#{$px}; }
+    ._m-l-#{$item} { margin-left: #{$item}#{$px}; }
+
+    ._p-#{$item} { padding: #{$item}#{$px}; }
+    ._p-t-#{$item} { padding-top: #{$item}#{$px}; }
+    ._p-r-#{$item} { padding-right: #{$item}#{$px}; }
+    ._p-b-#{$item} { padding-bottom: #{$item}#{$px}; }
+    ._p-l-#{$item} { padding-left: #{$item}#{$px}; }
+
+  }
+
+  // Gestion des font-size
+  @for $i from 8 through $font-sizes {
+    ._f-s-#{$i} { font-size: #{$i}px; }
+  }
+
+  // Gestion des couleurs
+  @for $i from 1 through length($colors-name) {
+    $name: nth($colors-name, $i);
+    $color: nth($colors, $i);
+    ._color-#{$name} { color: #{$color}; }
+    ._bgc-#{$name} { background-color: #{$color}; }
+    ._hover-color-#{$name}:hover { color: #{$color}; }
+    ._hover-bgc-#{$name}:hover { background-color: #{$color}; }
+  }
+
+
+  // Responsive
+  $count: length($breakpoints);
+  @for $i from 1 through $count {
+    $breakpoint: nth($breakpoints, $count - $i + 1);
+    @media screen and (max-width: #{$breakpoint}px) {
+
+      // Forcer le retour à la ligne
+      ._#{$breakpoint}-wrap { flex-flow: row wrap; }
+      // Empêcher le retour à la ligne
+      ._#{$breakpoint}-no-wrap { flex-flow: row nowrap; }
+
+      // Alignement vertical des enfants
+      ._#{$breakpoint}-align-top { align-self: flex-start; }
+      ._#{$breakpoint}-align-center { align-self: center; }
+      ._#{$breakpoint}-align-bottom { align-self: flex-end; }
+      ._container-flex {
+        ._#{$breakpoint}-align-top { align-items: flex-start; }
+        ._#{$breakpoint}-align-center { align-items: center; }
+        ._#{$breakpoint}-align-bottom { align-items: flex-end; }
+      }
+
+      // Alignement horizontale des enfants
+      ._#{$breakpoint}-pull-left { justify-content: flex-start; }
+      ._#{$breakpoint}-pull-center { justify-content: center; }
+      ._#{$breakpoint}-pull-right { justify-content: flex-end; }
+
+      // Gestion des collapses
+      ._#{$breakpoint}-collapse { justify-content: space-between; }
+      ._#{$breakpoint}-no-collapse { justify-content: space-around; }
+
+      // Gestion du display
+      ._#{$breakpoint}-hide{ display: none; }
+      ._#{$breakpoint}-show-block{ display: block; }
+      ._#{$breakpoint}-show-inline{ display: inline; }
+
+      // Gestion du text-align
+      ._#{$breakpoint}-text-left { text-align: left; }
+      ._#{$breakpoint}-text-center { text-align: center; }
+      ._#{$breakpoint}-text-right { text-align: right; }
+
+      // Gestion des boxes
+      ._container-flex {
+        @for $j from 1 through 100 {
+          ._#{$breakpoint}-box-#{$j} {
+            width: unquote("#{$j}%");
+          }
+        }
+      }
+
+      // Gestion des Margins et paddings
+      @each $item in $margins-paddings {
+        $px: px;
+        @if($item == auto){ $px: null; }
+        ._#{$breakpoint}-m-#{$item} { margin: #{$item}#{$px}; }
+        ._#{$breakpoint}-m-t-#{$item} { margin-top: #{$item}#{$px}; }
+        ._#{$breakpoint}-m-r-#{$item} { margin-right: #{$item}#{$px}; }
+        ._#{$breakpoint}-m-b-#{$item} { margin-bottom: #{$item}#{$px}; }
+        ._#{$breakpoint}-m-l-#{$item} { margin-left: #{$item}#{$px}; }
+
+        ._#{$breakpoint}-p-#{$item} { padding: #{$item}#{$px}; }
+        ._#{$breakpoint}-p-t-#{$item} { padding-top: #{$item}#{$px}; }
+        ._#{$breakpoint}-p-r-#{$item} { padding-right: #{$item}#{$px}; }
+        ._#{$breakpoint}-p-b-#{$item} { padding-bottom: #{$item}#{$px}; }
+        ._#{$breakpoint}-p-l-#{$item} { padding-left: #{$item}#{$px}; }
+
+      }
+
+      // Gestion des font-size
+      @for $i from 8 through $font-sizes {
+        ._#{$breakpoint}-f-s-#{$i} { font-size: #{$i}px; }
+      }
+
+      // Gestion des couleurs
+      @for $i from 1 through length($colors-name) {
+        $name: nth($colors-name, $i);
+        $color: nth($colors, $i);
+        ._#{$breakpoint}-color-#{$name} { color: #{$color}; }
+        ._#{$breakpoint}-bgc-#{$name} { background-color: #{$color}; }
+        ._#{$breakpoint}-hover-color-#{$name}:hover { color: #{$color}; }
+        ._#{$breakpoint}-hover-bgc-#{$name}:hover { background-color: #{$color}; }
+      }
+
+    }
+  }
+
+  // Denier élément + 1
+  $last: nth($breakpoints, length($breakpoints));
+  @media screen and (min-width: #{$last + 1}px) {
+    ._container {
+      width: 100%;
+      max-width: #{$last}px;
+      margin: auto;
+    }
+  }
+
+}
+
+@mixin arrow(
+  $size: 10px,
+  $color: #fff,
+  $position: "down"
+){
+  $deg: 45deg;
+  @if($position == "up"){ $deg: -135deg; }
+  @if($position == "top"){ $deg: -135deg; }
+  @if($position == "right"){ $deg: -45deg; }
+  @if($position == "down"){ $deg: 45deg; }
+  @if($position == "bottom"){ $deg: 45deg; }
+  @if($position == "left"){ $deg: 135deg; }
+  content: "";
+  width: $size;
+  height: $size;
+  border-bottom: 1px solid $color;
+  border-right: 1px solid $color;
+  transform: rotate($deg);
+}
+
+@mixin border-radius($top: 10px, $right: 10px, $bottom: 10px, $left: 10px, $all: null){
+  @if ($all != null) { $top: $all; $right: $all; $bottom: $all; $left: $all; }
+  border-radius: $top $right $bottom $left;
+}
+
+@mixin button (
+  $bgc: #6f5499
+){
+  ._button {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.25s;
+    border: none;
+    padding: 0.85em 1em;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    outline: 0;
+    text-decoration: none;
+    background-color: $bgc;
+    color: #B9C9D8;
+    &:hover {
+      color: #ffffff;
+      transition: all 0.25s;
+      background-color: lighten($bgc, 5%);
+    }
+    &._button-3d {
+      border-radius: 0;
+      transition: all 0.1s;
+      border-bottom: 5px solid darken($bgc, 10%);
+      text-shadow: 0px -2px darken($bgc, 10%);
+      &:active {
+        transform: translate(0px,5px);
+        border-bottom: 0;
+      }
+
+    }
+
+  }
+}
+
+@mixin button-color (
+  $bgc: #6f5499
+){
+  ._button {
+    background-color: $bgc;
+    &:hover {
+      background-color: lighten($bgc, 5%);
+    }
+    &._button-3d {
+      border-bottom: 5px solid darken($bgc, 10%);
+      text-shadow: 0px -2px darken($bgc, 10%);
+    }
+  }
+}
