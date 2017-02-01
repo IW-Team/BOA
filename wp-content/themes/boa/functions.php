@@ -1,5 +1,7 @@
 <?php
 
+require "class/requirements.php";
+
 function theme_styles() {
 	wp_enqueue_style('main_style', get_template_directory_uri().'/styles/css/app.css');
 
