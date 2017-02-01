@@ -22,7 +22,7 @@ $POST = new Post(get_post());
 <div id="container" class="_container">
 
     <header id="main-header">
-
+        <?php drawMenu() ?>
     </header>
 
     <main id="main-content">

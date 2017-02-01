@@ -1,6 +1,7 @@
 <?php
 
 add_action('init', 'main_menu');
+
 function main_menu()
 {
     register_nav_menu('main_menu', 'Menu principal');
@@ -19,7 +20,27 @@ add_action('wp_enqueue_scripts','theme_styles');
 add_theme_support('post-thumbnails');
 
 
-
+function drawMenu()
+{
+    wp_nav_menu(array(
+        'theme_location' => 'main_menu',
+        'menu' => 'main_menu',
+        'container' => '',
+        'container_class' => false,
+        'container_id' => false,
+        'menu_class' => 'nav navbar-nav pull-right',
+        'menu_id' => '',
+        'echo' => true,
+        'fallback_cb' => 'wp_page_menu',
+        'before' => '',
+        'after' => '',
+        'link_before' => '',
+        'link_after' => '',
+        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+        'depth' => 0,
+        'walker' => ''
+    ));
+}
 
 
 
