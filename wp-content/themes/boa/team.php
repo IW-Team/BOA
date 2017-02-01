@@ -2,7 +2,7 @@
 /**
  * Template Name : team
  *
- * @package BOA
- * @subpackage team
+ * @package wordPress
+ * @subpackage BOA
  * @since 1.0
  */
