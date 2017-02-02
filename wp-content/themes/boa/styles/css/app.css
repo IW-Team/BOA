@@ -1,0 +1,8030 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Roboto:400");
+/* line 5, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
+/* line 9, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 15, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 22, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 29, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 36, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 43, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 49, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 57, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 61, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 218, ../scss/_mixins.scss */
+._button {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border: none;
+  padding: 0.85em 1em;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  outline: 0;
+  text-decoration: none;
+  background-color: #6f5499;
+  color: #B9C9D8;
+}
+/* line 231, ../scss/_mixins.scss */
+._button:hover {
+  color: #ffffff;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  background-color: #7b5fa7;
+}
+/* line 236, ../scss/_mixins.scss */
+._button._button-3d {
+  border-radius: 0;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  border-bottom: 5px solid #574278;
+  text-shadow: 0px -2px #574278;
+}
+/* line 241, ../scss/_mixins.scss */
+._button._button-3d:active {
+  -webkit-transform: translate(0px, 5px);
+          transform: translate(0px, 5px);
+  border-bottom: 0;
+}
+
+/* line 6, ../scss/_mixins.scss */
+._container-flex {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+/* line 13, ../scss/_mixins.scss */
+._container-flex [class*='_box-']._align-top {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+/* line 16, ../scss/_mixins.scss */
+._container-flex [class*='_box-']._align-center {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/* line 19, ../scss/_mixins.scss */
+._container-flex [class*='_box-']._align-bottom {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-1 {
+  width: 1%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-2 {
+  width: 2%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-3 {
+  width: 3%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-4 {
+  width: 4%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-5 {
+  width: 5%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-6 {
+  width: 6%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-7 {
+  width: 7%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-8 {
+  width: 8%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-9 {
+  width: 9%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-10 {
+  width: 10%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-11 {
+  width: 11%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-12 {
+  width: 12%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-13 {
+  width: 13%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-14 {
+  width: 14%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-15 {
+  width: 15%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-16 {
+  width: 16%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-17 {
+  width: 17%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-18 {
+  width: 18%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-19 {
+  width: 19%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-20 {
+  width: 20%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-21 {
+  width: 21%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-22 {
+  width: 22%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-23 {
+  width: 23%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-24 {
+  width: 24%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-25 {
+  width: 25%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-26 {
+  width: 26%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-27 {
+  width: 27%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-28 {
+  width: 28%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-29 {
+  width: 29%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-30 {
+  width: 30%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-31 {
+  width: 31%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-32 {
+  width: 32%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-33 {
+  width: 33%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-34 {
+  width: 34%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-35 {
+  width: 35%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-36 {
+  width: 36%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-37 {
+  width: 37%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-38 {
+  width: 38%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-39 {
+  width: 39%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-40 {
+  width: 40%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-41 {
+  width: 41%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-42 {
+  width: 42%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-43 {
+  width: 43%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-44 {
+  width: 44%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-45 {
+  width: 45%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-46 {
+  width: 46%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-47 {
+  width: 47%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-48 {
+  width: 48%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-49 {
+  width: 49%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-50 {
+  width: 50%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-51 {
+  width: 51%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-52 {
+  width: 52%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-53 {
+  width: 53%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-54 {
+  width: 54%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-55 {
+  width: 55%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-56 {
+  width: 56%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-57 {
+  width: 57%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-58 {
+  width: 58%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-59 {
+  width: 59%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-60 {
+  width: 60%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-61 {
+  width: 61%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-62 {
+  width: 62%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-63 {
+  width: 63%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-64 {
+  width: 64%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-65 {
+  width: 65%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-66 {
+  width: 66%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-67 {
+  width: 67%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-68 {
+  width: 68%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-69 {
+  width: 69%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-70 {
+  width: 70%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-71 {
+  width: 71%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-72 {
+  width: 72%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-73 {
+  width: 73%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-74 {
+  width: 74%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-75 {
+  width: 75%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-76 {
+  width: 76%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-77 {
+  width: 77%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-78 {
+  width: 78%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-79 {
+  width: 79%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-80 {
+  width: 80%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-81 {
+  width: 81%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-82 {
+  width: 82%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-83 {
+  width: 83%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-84 {
+  width: 84%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-85 {
+  width: 85%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-86 {
+  width: 86%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-87 {
+  width: 87%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-88 {
+  width: 88%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-89 {
+  width: 89%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-90 {
+  width: 90%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-91 {
+  width: 91%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-92 {
+  width: 92%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-93 {
+  width: 93%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-94 {
+  width: 94%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-95 {
+  width: 95%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-96 {
+  width: 96%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-97 {
+  width: 97%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-98 {
+  width: 98%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-99 {
+  width: 99%;
+}
+/* line 24, ../scss/_mixins.scss */
+._container-flex ._box-100 {
+  width: 100%;
+}
+
+/* line 31, ../scss/_mixins.scss */
+._wrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+/* line 33, ../scss/_mixins.scss */
+._no-wrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+/* line 36, ../scss/_mixins.scss */
+._align-top {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* line 37, ../scss/_mixins.scss */
+._align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 38, ../scss/_mixins.scss */
+._align-bottom {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+/* line 41, ../scss/_mixins.scss */
+._pull-left {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+/* line 42, ../scss/_mixins.scss */
+._pull-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 43, ../scss/_mixins.scss */
+._pull-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* line 46, ../scss/_mixins.scss */
+._collapse {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 47, ../scss/_mixins.scss */
+._no-collapse {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/* line 50, ../scss/_mixins.scss */
+._hide {
+  display: none;
+}
+
+/* line 51, ../scss/_mixins.scss */
+._show-block {
+  display: block;
+}
+
+/* line 52, ../scss/_mixins.scss */
+._show-inline {
+  display: inline;
+}
+
+/* line 55, ../scss/_mixins.scss */
+._text-left {
+  text-align: left;
+}
+
+/* line 56, ../scss/_mixins.scss */
+._text-center {
+  text-align: center;
+}
+
+/* line 57, ../scss/_mixins.scss */
+._text-right {
+  text-align: right;
+}
+
+/* line 63, ../scss/_mixins.scss */
+._m-5 {
+  margin: 5px;
+}
+
+/* line 64, ../scss/_mixins.scss */
+._m-t-5 {
+  margin-top: 5px;
+}
+
+/* line 65, ../scss/_mixins.scss */
+._m-r-5 {
+  margin-right: 5px;
+}
+
+/* line 66, ../scss/_mixins.scss */
+._m-b-5 {
+  margin-bottom: 5px;
+}
+
+/* line 67, ../scss/_mixins.scss */
+._m-l-5 {
+  margin-left: 5px;
+}
+
+/* line 69, ../scss/_mixins.scss */
+._p-5 {
+  padding: 5px;
+}
+
+/* line 70, ../scss/_mixins.scss */
+._p-t-5 {
+  padding-top: 5px;
+}
+
+/* line 71, ../scss/_mixins.scss */
+._p-r-5 {
+  padding-right: 5px;
+}
+
+/* line 72, ../scss/_mixins.scss */
+._p-b-5 {
+  padding-bottom: 5px;
+}
+
+/* line 73, ../scss/_mixins.scss */
+._p-l-5 {
+  padding-left: 5px;
+}
+
+/* line 63, ../scss/_mixins.scss */
+._m-10 {
+  margin: 10px;
+}
+
+/* line 64, ../scss/_mixins.scss */
+._m-t-10 {
+  margin-top: 10px;
+}
+
+/* line 65, ../scss/_mixins.scss */
+._m-r-10 {
+  margin-right: 10px;
+}
+
+/* line 66, ../scss/_mixins.scss */
+._m-b-10 {
+  margin-bottom: 10px;
+}
+
+/* line 67, ../scss/_mixins.scss */
+._m-l-10 {
+  margin-left: 10px;
+}
+
+/* line 69, ../scss/_mixins.scss */
+._p-10 {
+  padding: 10px;
+}
+
+/* line 70, ../scss/_mixins.scss */
+._p-t-10 {
+  padding-top: 10px;
+}
+
+/* line 71, ../scss/_mixins.scss */
+._p-r-10 {
+  padding-right: 10px;
+}
+
+/* line 72, ../scss/_mixins.scss */
+._p-b-10 {
+  padding-bottom: 10px;
+}
+
+/* line 73, ../scss/_mixins.scss */
+._p-l-10 {
+  padding-left: 10px;
+}
+
+/* line 63, ../scss/_mixins.scss */
+._m-15 {
+  margin: 15px;
+}
+
+/* line 64, ../scss/_mixins.scss */
+._m-t-15 {
+  margin-top: 15px;
+}
+
+/* line 65, ../scss/_mixins.scss */
+._m-r-15 {
+  margin-right: 15px;
+}
+
+/* line 66, ../scss/_mixins.scss */
+._m-b-15 {
+  margin-bottom: 15px;
+}
+
+/* line 67, ../scss/_mixins.scss */
+._m-l-15 {
+  margin-left: 15px;
+}
+
+/* line 69, ../scss/_mixins.scss */
+._p-15 {
+  padding: 15px;
+}
+
+/* line 70, ../scss/_mixins.scss */
+._p-t-15 {
+  padding-top: 15px;
+}
+
+/* line 71, ../scss/_mixins.scss */
+._p-r-15 {
+  padding-right: 15px;
+}
+
+/* line 72, ../scss/_mixins.scss */
+._p-b-15 {
+  padding-bottom: 15px;
+}
+
+/* line 73, ../scss/_mixins.scss */
+._p-l-15 {
+  padding-left: 15px;
+}
+
+/* line 63, ../scss/_mixins.scss */
+._m-20 {
+  margin: 20px;
+}
+
+/* line 64, ../scss/_mixins.scss */
+._m-t-20 {
+  margin-top: 20px;
+}
+
+/* line 65, ../scss/_mixins.scss */
+._m-r-20 {
+  margin-right: 20px;
+}
+
+/* line 66, ../scss/_mixins.scss */
+._m-b-20 {
+  margin-bottom: 20px;
+}
+
+/* line 67, ../scss/_mixins.scss */
+._m-l-20 {
+  margin-left: 20px;
+}
+
+/* line 69, ../scss/_mixins.scss */
+._p-20 {
+  padding: 20px;
+}
+
+/* line 70, ../scss/_mixins.scss */
+._p-t-20 {
+  padding-top: 20px;
+}
+
+/* line 71, ../scss/_mixins.scss */
+._p-r-20 {
+  padding-right: 20px;
+}
+
+/* line 72, ../scss/_mixins.scss */
+._p-b-20 {
+  padding-bottom: 20px;
+}
+
+/* line 73, ../scss/_mixins.scss */
+._p-l-20 {
+  padding-left: 20px;
+}
+
+/* line 63, ../scss/_mixins.scss */
+._m-25 {
+  margin: 25px;
+}
+
+/* line 64, ../scss/_mixins.scss */
+._m-t-25 {
+  margin-top: 25px;
+}
+
+/* line 65, ../scss/_mixins.scss */
+._m-r-25 {
+  margin-right: 25px;
+}
+
+/* line 66, ../scss/_mixins.scss */
+._m-b-25 {
+  margin-bottom: 25px;
+}
+
+/* line 67, ../scss/_mixins.scss */
+._m-l-25 {
+  margin-left: 25px;
+}
+
+/* line 69, ../scss/_mixins.scss */
+._p-25 {
+  padding: 25px;
+}
+
+/* line 70, ../scss/_mixins.scss */
+._p-t-25 {
+  padding-top: 25px;
+}
+
+/* line 71, ../scss/_mixins.scss */
+._p-r-25 {
+  padding-right: 25px;
+}
+
+/* line 72, ../scss/_mixins.scss */
+._p-b-25 {
+  padding-bottom: 25px;
+}
+
+/* line 73, ../scss/_mixins.scss */
+._p-l-25 {
+  padding-left: 25px;
+}
+
+/* line 63, ../scss/_mixins.scss */
+._m-30 {
+  margin: 30px;
+}
+
+/* line 64, ../scss/_mixins.scss */
+._m-t-30 {
+  margin-top: 30px;
+}
+
+/* line 65, ../scss/_mixins.scss */
+._m-r-30 {
+  margin-right: 30px;
+}
+
+/* line 66, ../scss/_mixins.scss */
+._m-b-30 {
+  margin-bottom: 30px;
+}
+
+/* line 67, ../scss/_mixins.scss */
+._m-l-30 {
+  margin-left: 30px;
+}
+
+/* line 69, ../scss/_mixins.scss */
+._p-30 {
+  padding: 30px;
+}
+
+/* line 70, ../scss/_mixins.scss */
+._p-t-30 {
+  padding-top: 30px;
+}
+
+/* line 71, ../scss/_mixins.scss */
+._p-r-30 {
+  padding-right: 30px;
+}
+
+/* line 72, ../scss/_mixins.scss */
+._p-b-30 {
+  padding-bottom: 30px;
+}
+
+/* line 73, ../scss/_mixins.scss */
+._p-l-30 {
+  padding-left: 30px;
+}
+
+/* line 63, ../scss/_mixins.scss */
+._m-35 {
+  margin: 35px;
+}
+
+/* line 64, ../scss/_mixins.scss */
+._m-t-35 {
+  margin-top: 35px;
+}
+
+/* line 65, ../scss/_mixins.scss */
+._m-r-35 {
+  margin-right: 35px;
+}
+
+/* line 66, ../scss/_mixins.scss */
+._m-b-35 {
+  margin-bottom: 35px;
+}
+
+/* line 67, ../scss/_mixins.scss */
+._m-l-35 {
+  margin-left: 35px;
+}
+
+/* line 69, ../scss/_mixins.scss */
+._p-35 {
+  padding: 35px;
+}
+
+/* line 70, ../scss/_mixins.scss */
+._p-t-35 {
+  padding-top: 35px;
+}
+
+/* line 71, ../scss/_mixins.scss */
+._p-r-35 {
+  padding-right: 35px;
+}
+
+/* line 72, ../scss/_mixins.scss */
+._p-b-35 {
+  padding-bottom: 35px;
+}
+
+/* line 73, ../scss/_mixins.scss */
+._p-l-35 {
+  padding-left: 35px;
+}
+
+/* line 63, ../scss/_mixins.scss */
+._m-40 {
+  margin: 40px;
+}
+
+/* line 64, ../scss/_mixins.scss */
+._m-t-40 {
+  margin-top: 40px;
+}
+
+/* line 65, ../scss/_mixins.scss */
+._m-r-40 {
+  margin-right: 40px;
+}
+
+/* line 66, ../scss/_mixins.scss */
+._m-b-40 {
+  margin-bottom: 40px;
+}
+
+/* line 67, ../scss/_mixins.scss */
+._m-l-40 {
+  margin-left: 40px;
+}
+
+/* line 69, ../scss/_mixins.scss */
+._p-40 {
+  padding: 40px;
+}
+
+/* line 70, ../scss/_mixins.scss */
+._p-t-40 {
+  padding-top: 40px;
+}
+
+/* line 71, ../scss/_mixins.scss */
+._p-r-40 {
+  padding-right: 40px;
+}
+
+/* line 72, ../scss/_mixins.scss */
+._p-b-40 {
+  padding-bottom: 40px;
+}
+
+/* line 73, ../scss/_mixins.scss */
+._p-l-40 {
+  padding-left: 40px;
+}
+
+/* line 63, ../scss/_mixins.scss */
+._m-45 {
+  margin: 45px;
+}
+
+/* line 64, ../scss/_mixins.scss */
+._m-t-45 {
+  margin-top: 45px;
+}
+
+/* line 65, ../scss/_mixins.scss */
+._m-r-45 {
+  margin-right: 45px;
+}
+
+/* line 66, ../scss/_mixins.scss */
+._m-b-45 {
+  margin-bottom: 45px;
+}
+
+/* line 67, ../scss/_mixins.scss */
+._m-l-45 {
+  margin-left: 45px;
+}
+
+/* line 69, ../scss/_mixins.scss */
+._p-45 {
+  padding: 45px;
+}
+
+/* line 70, ../scss/_mixins.scss */
+._p-t-45 {
+  padding-top: 45px;
+}
+
+/* line 71, ../scss/_mixins.scss */
+._p-r-45 {
+  padding-right: 45px;
+}
+
+/* line 72, ../scss/_mixins.scss */
+._p-b-45 {
+  padding-bottom: 45px;
+}
+
+/* line 73, ../scss/_mixins.scss */
+._p-l-45 {
+  padding-left: 45px;
+}
+
+/* line 63, ../scss/_mixins.scss */
+._m-50 {
+  margin: 50px;
+}
+
+/* line 64, ../scss/_mixins.scss */
+._m-t-50 {
+  margin-top: 50px;
+}
+
+/* line 65, ../scss/_mixins.scss */
+._m-r-50 {
+  margin-right: 50px;
+}
+
+/* line 66, ../scss/_mixins.scss */
+._m-b-50 {
+  margin-bottom: 50px;
+}
+
+/* line 67, ../scss/_mixins.scss */
+._m-l-50 {
+  margin-left: 50px;
+}
+
+/* line 69, ../scss/_mixins.scss */
+._p-50 {
+  padding: 50px;
+}
+
+/* line 70, ../scss/_mixins.scss */
+._p-t-50 {
+  padding-top: 50px;
+}
+
+/* line 71, ../scss/_mixins.scss */
+._p-r-50 {
+  padding-right: 50px;
+}
+
+/* line 72, ../scss/_mixins.scss */
+._p-b-50 {
+  padding-bottom: 50px;
+}
+
+/* line 73, ../scss/_mixins.scss */
+._p-l-50 {
+  padding-left: 50px;
+}
+
+/* line 63, ../scss/_mixins.scss */
+._m-auto {
+  margin: auto;
+}
+
+/* line 64, ../scss/_mixins.scss */
+._m-t-auto {
+  margin-top: auto;
+}
+
+/* line 65, ../scss/_mixins.scss */
+._m-r-auto {
+  margin-right: auto;
+}
+
+/* line 66, ../scss/_mixins.scss */
+._m-b-auto {
+  margin-bottom: auto;
+}
+
+/* line 67, ../scss/_mixins.scss */
+._m-l-auto {
+  margin-left: auto;
+}
+
+/* line 69, ../scss/_mixins.scss */
+._p-auto {
+  padding: auto;
+}
+
+/* line 70, ../scss/_mixins.scss */
+._p-t-auto {
+  padding-top: auto;
+}
+
+/* line 71, ../scss/_mixins.scss */
+._p-r-auto {
+  padding-right: auto;
+}
+
+/* line 72, ../scss/_mixins.scss */
+._p-b-auto {
+  padding-bottom: auto;
+}
+
+/* line 73, ../scss/_mixins.scss */
+._p-l-auto {
+  padding-left: auto;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-8 {
+  font-size: 8px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-9 {
+  font-size: 9px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-10 {
+  font-size: 10px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-11 {
+  font-size: 11px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-12 {
+  font-size: 12px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-13 {
+  font-size: 13px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-14 {
+  font-size: 14px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-15 {
+  font-size: 15px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-16 {
+  font-size: 16px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-17 {
+  font-size: 17px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-18 {
+  font-size: 18px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-19 {
+  font-size: 19px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-20 {
+  font-size: 20px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-21 {
+  font-size: 21px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-22 {
+  font-size: 22px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-23 {
+  font-size: 23px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-24 {
+  font-size: 24px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-25 {
+  font-size: 25px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-26 {
+  font-size: 26px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-27 {
+  font-size: 27px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-28 {
+  font-size: 28px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-29 {
+  font-size: 29px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-30 {
+  font-size: 30px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-31 {
+  font-size: 31px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-32 {
+  font-size: 32px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-33 {
+  font-size: 33px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-34 {
+  font-size: 34px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-35 {
+  font-size: 35px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-36 {
+  font-size: 36px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-37 {
+  font-size: 37px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-38 {
+  font-size: 38px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-39 {
+  font-size: 39px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-40 {
+  font-size: 40px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-41 {
+  font-size: 41px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-42 {
+  font-size: 42px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-43 {
+  font-size: 43px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-44 {
+  font-size: 44px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-45 {
+  font-size: 45px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-46 {
+  font-size: 46px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-47 {
+  font-size: 47px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-48 {
+  font-size: 48px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-49 {
+  font-size: 49px;
+}
+
+/* line 79, ../scss/_mixins.scss */
+._f-s-50 {
+  font-size: 50px;
+}
+
+/* line 86, ../scss/_mixins.scss */
+._color-purple-50 {
+  color: #F3E5F5;
+}
+
+/* line 87, ../scss/_mixins.scss */
+._bgc-purple-50 {
+  background-color: #F3E5F5;
+}
+
+/* line 88, ../scss/_mixins.scss */
+._hover-color-purple-50:hover {
+  color: #F3E5F5;
+}
+
+/* line 89, ../scss/_mixins.scss */
+._hover-bgc-purple-50:hover {
+  background-color: #F3E5F5;
+}
+
+/* line 86, ../scss/_mixins.scss */
+._color-purple-100 {
+  color: #E1BEE7;
+}
+
+/* line 87, ../scss/_mixins.scss */
+._bgc-purple-100 {
+  background-color: #E1BEE7;
+}
+
+/* line 88, ../scss/_mixins.scss */
+._hover-color-purple-100:hover {
+  color: #E1BEE7;
+}
+
+/* line 89, ../scss/_mixins.scss */
+._hover-bgc-purple-100:hover {
+  background-color: #E1BEE7;
+}
+
+/* line 86, ../scss/_mixins.scss */
+._color-purple-200 {
+  color: #CE93D8;
+}
+
+/* line 87, ../scss/_mixins.scss */
+._bgc-purple-200 {
+  background-color: #CE93D8;
+}
+
+/* line 88, ../scss/_mixins.scss */
+._hover-color-purple-200:hover {
+  color: #CE93D8;
+}
+
+/* line 89, ../scss/_mixins.scss */
+._hover-bgc-purple-200:hover {
+  background-color: #CE93D8;
+}
+
+/* line 86, ../scss/_mixins.scss */
+._color-purple-300 {
+  color: #BA68C8;
+}
+
+/* line 87, ../scss/_mixins.scss */
+._bgc-purple-300 {
+  background-color: #BA68C8;
+}
+
+/* line 88, ../scss/_mixins.scss */
+._hover-color-purple-300:hover {
+  color: #BA68C8;
+}
+
+/* line 89, ../scss/_mixins.scss */
+._hover-bgc-purple-300:hover {
+  background-color: #BA68C8;
+}
+
+/* line 86, ../scss/_mixins.scss */
+._color-purple-400 {
+  color: #AB47BC;
+}
+
+/* line 87, ../scss/_mixins.scss */
+._bgc-purple-400 {
+  background-color: #AB47BC;
+}
+
+/* line 88, ../scss/_mixins.scss */
+._hover-color-purple-400:hover {
+  color: #AB47BC;
+}
+
+/* line 89, ../scss/_mixins.scss */
+._hover-bgc-purple-400:hover {
+  background-color: #AB47BC;
+}
+
+/* line 86, ../scss/_mixins.scss */
+._color-purple-500 {
+  color: #9C27B0;
+}
+
+/* line 87, ../scss/_mixins.scss */
+._bgc-purple-500 {
+  background-color: #9C27B0;
+}
+
+/* line 88, ../scss/_mixins.scss */
+._hover-color-purple-500:hover {
+  color: #9C27B0;
+}
+
+/* line 89, ../scss/_mixins.scss */
+._hover-bgc-purple-500:hover {
+  background-color: #9C27B0;
+}
+
+/* line 86, ../scss/_mixins.scss */
+._color-purple-600 {
+  color: #8E24AA;
+}
+
+/* line 87, ../scss/_mixins.scss */
+._bgc-purple-600 {
+  background-color: #8E24AA;
+}
+
+/* line 88, ../scss/_mixins.scss */
+._hover-color-purple-600:hover {
+  color: #8E24AA;
+}
+
+/* line 89, ../scss/_mixins.scss */
+._hover-bgc-purple-600:hover {
+  background-color: #8E24AA;
+}
+
+/* line 86, ../scss/_mixins.scss */
+._color-purple-700 {
+  color: #7B1FA2;
+}
+
+/* line 87, ../scss/_mixins.scss */
+._bgc-purple-700 {
+  background-color: #7B1FA2;
+}
+
+/* line 88, ../scss/_mixins.scss */
+._hover-color-purple-700:hover {
+  color: #7B1FA2;
+}
+
+/* line 89, ../scss/_mixins.scss */
+._hover-bgc-purple-700:hover {
+  background-color: #7B1FA2;
+}
+
+/* line 86, ../scss/_mixins.scss */
+._color-purple-800 {
+  color: #6A1B9A;
+}
+
+/* line 87, ../scss/_mixins.scss */
+._bgc-purple-800 {
+  background-color: #6A1B9A;
+}
+
+/* line 88, ../scss/_mixins.scss */
+._hover-color-purple-800:hover {
+  color: #6A1B9A;
+}
+
+/* line 89, ../scss/_mixins.scss */
+._hover-bgc-purple-800:hover {
+  background-color: #6A1B9A;
+}
+
+/* line 86, ../scss/_mixins.scss */
+._color-purple-900 {
+  color: #4A148C;
+}
+
+/* line 87, ../scss/_mixins.scss */
+._bgc-purple-900 {
+  background-color: #4A148C;
+}
+
+/* line 88, ../scss/_mixins.scss */
+._hover-color-purple-900:hover {
+  color: #4A148C;
+}
+
+/* line 89, ../scss/_mixins.scss */
+._hover-bgc-purple-900:hover {
+  background-color: #4A148C;
+}
+
+/* line 86, ../scss/_mixins.scss */
+._color-purple-A100 {
+  color: #EA80FC;
+}
+
+/* line 87, ../scss/_mixins.scss */
+._bgc-purple-A100 {
+  background-color: #EA80FC;
+}
+
+/* line 88, ../scss/_mixins.scss */
+._hover-color-purple-A100:hover {
+  color: #EA80FC;
+}
+
+/* line 89, ../scss/_mixins.scss */
+._hover-bgc-purple-A100:hover {
+  background-color: #EA80FC;
+}
+
+/* line 86, ../scss/_mixins.scss */
+._color-purple-A200 {
+  color: #E040FB;
+}
+
+/* line 87, ../scss/_mixins.scss */
+._bgc-purple-A200 {
+  background-color: #E040FB;
+}
+
+/* line 88, ../scss/_mixins.scss */
+._hover-color-purple-A200:hover {
+  color: #E040FB;
+}
+
+/* line 89, ../scss/_mixins.scss */
+._hover-bgc-purple-A200:hover {
+  background-color: #E040FB;
+}
+
+/* line 86, ../scss/_mixins.scss */
+._color-purple-A400 {
+  color: #D500F9;
+}
+
+/* line 87, ../scss/_mixins.scss */
+._bgc-purple-A400 {
+  background-color: #D500F9;
+}
+
+/* line 88, ../scss/_mixins.scss */
+._hover-color-purple-A400:hover {
+  color: #D500F9;
+}
+
+/* line 89, ../scss/_mixins.scss */
+._hover-bgc-purple-A400:hover {
+  background-color: #D500F9;
+}
+
+/* line 86, ../scss/_mixins.scss */
+._color-purple-A700 {
+  color: #AA00FF;
+}
+
+/* line 87, ../scss/_mixins.scss */
+._bgc-purple-A700 {
+  background-color: #AA00FF;
+}
+
+/* line 88, ../scss/_mixins.scss */
+._hover-color-purple-A700:hover {
+  color: #AA00FF;
+}
+
+/* line 89, ../scss/_mixins.scss */
+._hover-bgc-purple-A700:hover {
+  background-color: #AA00FF;
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 100, ../scss/_mixins.scss */
+  ._1200-wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+
+  /* line 102, ../scss/_mixins.scss */
+  ._1200-no-wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+
+  /* line 105, ../scss/_mixins.scss */
+  ._1200-align-top {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+
+  /* line 106, ../scss/_mixins.scss */
+  ._1200-align-center {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+
+  /* line 107, ../scss/_mixins.scss */
+  ._1200-align-bottom {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+
+  /* line 109, ../scss/_mixins.scss */
+  ._container-flex ._1200-align-top {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  /* line 110, ../scss/_mixins.scss */
+  ._container-flex ._1200-align-center {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* line 111, ../scss/_mixins.scss */
+  ._container-flex ._1200-align-bottom {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+  /* line 115, ../scss/_mixins.scss */
+  ._1200-pull-left {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  /* line 116, ../scss/_mixins.scss */
+  ._1200-pull-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  /* line 117, ../scss/_mixins.scss */
+  ._1200-pull-right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  /* line 120, ../scss/_mixins.scss */
+  ._1200-collapse {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  /* line 121, ../scss/_mixins.scss */
+  ._1200-no-collapse {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  /* line 124, ../scss/_mixins.scss */
+  ._1200-hide {
+    display: none;
+  }
+
+  /* line 125, ../scss/_mixins.scss */
+  ._1200-show-block {
+    display: block;
+  }
+
+  /* line 126, ../scss/_mixins.scss */
+  ._1200-show-inline {
+    display: inline;
+  }
+
+  /* line 129, ../scss/_mixins.scss */
+  ._1200-text-left {
+    text-align: left;
+  }
+
+  /* line 130, ../scss/_mixins.scss */
+  ._1200-text-center {
+    text-align: center;
+  }
+
+  /* line 131, ../scss/_mixins.scss */
+  ._1200-text-right {
+    text-align: right;
+  }
+
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-1 {
+    width: 1%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-2 {
+    width: 2%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-3 {
+    width: 3%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-4 {
+    width: 4%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-5 {
+    width: 5%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-6 {
+    width: 6%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-7 {
+    width: 7%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-8 {
+    width: 8%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-9 {
+    width: 9%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-10 {
+    width: 10%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-11 {
+    width: 11%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-12 {
+    width: 12%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-13 {
+    width: 13%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-14 {
+    width: 14%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-15 {
+    width: 15%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-16 {
+    width: 16%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-17 {
+    width: 17%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-18 {
+    width: 18%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-19 {
+    width: 19%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-20 {
+    width: 20%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-21 {
+    width: 21%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-22 {
+    width: 22%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-23 {
+    width: 23%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-24 {
+    width: 24%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-25 {
+    width: 25%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-26 {
+    width: 26%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-27 {
+    width: 27%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-28 {
+    width: 28%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-29 {
+    width: 29%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-30 {
+    width: 30%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-31 {
+    width: 31%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-32 {
+    width: 32%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-33 {
+    width: 33%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-34 {
+    width: 34%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-35 {
+    width: 35%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-36 {
+    width: 36%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-37 {
+    width: 37%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-38 {
+    width: 38%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-39 {
+    width: 39%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-40 {
+    width: 40%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-41 {
+    width: 41%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-42 {
+    width: 42%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-43 {
+    width: 43%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-44 {
+    width: 44%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-45 {
+    width: 45%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-46 {
+    width: 46%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-47 {
+    width: 47%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-48 {
+    width: 48%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-49 {
+    width: 49%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-50 {
+    width: 50%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-51 {
+    width: 51%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-52 {
+    width: 52%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-53 {
+    width: 53%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-54 {
+    width: 54%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-55 {
+    width: 55%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-56 {
+    width: 56%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-57 {
+    width: 57%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-58 {
+    width: 58%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-59 {
+    width: 59%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-60 {
+    width: 60%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-61 {
+    width: 61%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-62 {
+    width: 62%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-63 {
+    width: 63%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-64 {
+    width: 64%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-65 {
+    width: 65%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-66 {
+    width: 66%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-67 {
+    width: 67%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-68 {
+    width: 68%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-69 {
+    width: 69%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-70 {
+    width: 70%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-71 {
+    width: 71%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-72 {
+    width: 72%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-73 {
+    width: 73%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-74 {
+    width: 74%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-75 {
+    width: 75%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-76 {
+    width: 76%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-77 {
+    width: 77%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-78 {
+    width: 78%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-79 {
+    width: 79%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-80 {
+    width: 80%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-81 {
+    width: 81%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-82 {
+    width: 82%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-83 {
+    width: 83%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-84 {
+    width: 84%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-85 {
+    width: 85%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-86 {
+    width: 86%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-87 {
+    width: 87%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-88 {
+    width: 88%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-89 {
+    width: 89%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-90 {
+    width: 90%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-91 {
+    width: 91%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-92 {
+    width: 92%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-93 {
+    width: 93%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-94 {
+    width: 94%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-95 {
+    width: 95%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-96 {
+    width: 96%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-97 {
+    width: 97%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-98 {
+    width: 98%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-99 {
+    width: 99%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._1200-box-100 {
+    width: 100%;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._1200-m-5 {
+    margin: 5px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._1200-m-t-5 {
+    margin-top: 5px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._1200-m-r-5 {
+    margin-right: 5px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._1200-m-b-5 {
+    margin-bottom: 5px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._1200-m-l-5 {
+    margin-left: 5px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._1200-p-5 {
+    padding: 5px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._1200-p-t-5 {
+    padding-top: 5px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._1200-p-r-5 {
+    padding-right: 5px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._1200-p-b-5 {
+    padding-bottom: 5px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._1200-p-l-5 {
+    padding-left: 5px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._1200-m-10 {
+    margin: 10px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._1200-m-t-10 {
+    margin-top: 10px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._1200-m-r-10 {
+    margin-right: 10px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._1200-m-b-10 {
+    margin-bottom: 10px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._1200-m-l-10 {
+    margin-left: 10px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._1200-p-10 {
+    padding: 10px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._1200-p-t-10 {
+    padding-top: 10px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._1200-p-r-10 {
+    padding-right: 10px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._1200-p-b-10 {
+    padding-bottom: 10px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._1200-p-l-10 {
+    padding-left: 10px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._1200-m-15 {
+    margin: 15px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._1200-m-t-15 {
+    margin-top: 15px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._1200-m-r-15 {
+    margin-right: 15px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._1200-m-b-15 {
+    margin-bottom: 15px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._1200-m-l-15 {
+    margin-left: 15px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._1200-p-15 {
+    padding: 15px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._1200-p-t-15 {
+    padding-top: 15px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._1200-p-r-15 {
+    padding-right: 15px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._1200-p-b-15 {
+    padding-bottom: 15px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._1200-p-l-15 {
+    padding-left: 15px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._1200-m-20 {
+    margin: 20px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._1200-m-t-20 {
+    margin-top: 20px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._1200-m-r-20 {
+    margin-right: 20px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._1200-m-b-20 {
+    margin-bottom: 20px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._1200-m-l-20 {
+    margin-left: 20px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._1200-p-20 {
+    padding: 20px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._1200-p-t-20 {
+    padding-top: 20px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._1200-p-r-20 {
+    padding-right: 20px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._1200-p-b-20 {
+    padding-bottom: 20px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._1200-p-l-20 {
+    padding-left: 20px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._1200-m-25 {
+    margin: 25px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._1200-m-t-25 {
+    margin-top: 25px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._1200-m-r-25 {
+    margin-right: 25px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._1200-m-b-25 {
+    margin-bottom: 25px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._1200-m-l-25 {
+    margin-left: 25px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._1200-p-25 {
+    padding: 25px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._1200-p-t-25 {
+    padding-top: 25px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._1200-p-r-25 {
+    padding-right: 25px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._1200-p-b-25 {
+    padding-bottom: 25px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._1200-p-l-25 {
+    padding-left: 25px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._1200-m-30 {
+    margin: 30px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._1200-m-t-30 {
+    margin-top: 30px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._1200-m-r-30 {
+    margin-right: 30px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._1200-m-b-30 {
+    margin-bottom: 30px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._1200-m-l-30 {
+    margin-left: 30px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._1200-p-30 {
+    padding: 30px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._1200-p-t-30 {
+    padding-top: 30px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._1200-p-r-30 {
+    padding-right: 30px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._1200-p-b-30 {
+    padding-bottom: 30px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._1200-p-l-30 {
+    padding-left: 30px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._1200-m-35 {
+    margin: 35px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._1200-m-t-35 {
+    margin-top: 35px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._1200-m-r-35 {
+    margin-right: 35px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._1200-m-b-35 {
+    margin-bottom: 35px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._1200-m-l-35 {
+    margin-left: 35px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._1200-p-35 {
+    padding: 35px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._1200-p-t-35 {
+    padding-top: 35px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._1200-p-r-35 {
+    padding-right: 35px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._1200-p-b-35 {
+    padding-bottom: 35px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._1200-p-l-35 {
+    padding-left: 35px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._1200-m-40 {
+    margin: 40px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._1200-m-t-40 {
+    margin-top: 40px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._1200-m-r-40 {
+    margin-right: 40px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._1200-m-b-40 {
+    margin-bottom: 40px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._1200-m-l-40 {
+    margin-left: 40px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._1200-p-40 {
+    padding: 40px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._1200-p-t-40 {
+    padding-top: 40px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._1200-p-r-40 {
+    padding-right: 40px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._1200-p-b-40 {
+    padding-bottom: 40px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._1200-p-l-40 {
+    padding-left: 40px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._1200-m-45 {
+    margin: 45px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._1200-m-t-45 {
+    margin-top: 45px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._1200-m-r-45 {
+    margin-right: 45px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._1200-m-b-45 {
+    margin-bottom: 45px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._1200-m-l-45 {
+    margin-left: 45px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._1200-p-45 {
+    padding: 45px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._1200-p-t-45 {
+    padding-top: 45px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._1200-p-r-45 {
+    padding-right: 45px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._1200-p-b-45 {
+    padding-bottom: 45px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._1200-p-l-45 {
+    padding-left: 45px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._1200-m-50 {
+    margin: 50px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._1200-m-t-50 {
+    margin-top: 50px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._1200-m-r-50 {
+    margin-right: 50px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._1200-m-b-50 {
+    margin-bottom: 50px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._1200-m-l-50 {
+    margin-left: 50px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._1200-p-50 {
+    padding: 50px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._1200-p-t-50 {
+    padding-top: 50px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._1200-p-r-50 {
+    padding-right: 50px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._1200-p-b-50 {
+    padding-bottom: 50px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._1200-p-l-50 {
+    padding-left: 50px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._1200-m-auto {
+    margin: auto;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._1200-m-t-auto {
+    margin-top: auto;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._1200-m-r-auto {
+    margin-right: auto;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._1200-m-b-auto {
+    margin-bottom: auto;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._1200-m-l-auto {
+    margin-left: auto;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._1200-p-auto {
+    padding: auto;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._1200-p-t-auto {
+    padding-top: auto;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._1200-p-r-auto {
+    padding-right: auto;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._1200-p-b-auto {
+    padding-bottom: auto;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._1200-p-l-auto {
+    padding-left: auto;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-8 {
+    font-size: 8px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-9 {
+    font-size: 9px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-10 {
+    font-size: 10px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-11 {
+    font-size: 11px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-12 {
+    font-size: 12px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-13 {
+    font-size: 13px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-14 {
+    font-size: 14px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-15 {
+    font-size: 15px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-16 {
+    font-size: 16px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-17 {
+    font-size: 17px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-18 {
+    font-size: 18px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-19 {
+    font-size: 19px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-20 {
+    font-size: 20px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-21 {
+    font-size: 21px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-22 {
+    font-size: 22px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-23 {
+    font-size: 23px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-24 {
+    font-size: 24px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-25 {
+    font-size: 25px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-26 {
+    font-size: 26px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-27 {
+    font-size: 27px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-28 {
+    font-size: 28px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-29 {
+    font-size: 29px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-30 {
+    font-size: 30px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-31 {
+    font-size: 31px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-32 {
+    font-size: 32px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-33 {
+    font-size: 33px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-34 {
+    font-size: 34px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-35 {
+    font-size: 35px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-36 {
+    font-size: 36px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-37 {
+    font-size: 37px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-38 {
+    font-size: 38px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-39 {
+    font-size: 39px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-40 {
+    font-size: 40px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-41 {
+    font-size: 41px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-42 {
+    font-size: 42px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-43 {
+    font-size: 43px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-44 {
+    font-size: 44px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-45 {
+    font-size: 45px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-46 {
+    font-size: 46px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-47 {
+    font-size: 47px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-48 {
+    font-size: 48px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-49 {
+    font-size: 49px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._1200-f-s-50 {
+    font-size: 50px;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._1200-color-purple-50 {
+    color: #F3E5F5;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._1200-bgc-purple-50 {
+    background-color: #F3E5F5;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._1200-hover-color-purple-50:hover {
+    color: #F3E5F5;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._1200-hover-bgc-purple-50:hover {
+    background-color: #F3E5F5;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._1200-color-purple-100 {
+    color: #E1BEE7;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._1200-bgc-purple-100 {
+    background-color: #E1BEE7;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._1200-hover-color-purple-100:hover {
+    color: #E1BEE7;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._1200-hover-bgc-purple-100:hover {
+    background-color: #E1BEE7;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._1200-color-purple-200 {
+    color: #CE93D8;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._1200-bgc-purple-200 {
+    background-color: #CE93D8;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._1200-hover-color-purple-200:hover {
+    color: #CE93D8;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._1200-hover-bgc-purple-200:hover {
+    background-color: #CE93D8;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._1200-color-purple-300 {
+    color: #BA68C8;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._1200-bgc-purple-300 {
+    background-color: #BA68C8;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._1200-hover-color-purple-300:hover {
+    color: #BA68C8;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._1200-hover-bgc-purple-300:hover {
+    background-color: #BA68C8;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._1200-color-purple-400 {
+    color: #AB47BC;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._1200-bgc-purple-400 {
+    background-color: #AB47BC;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._1200-hover-color-purple-400:hover {
+    color: #AB47BC;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._1200-hover-bgc-purple-400:hover {
+    background-color: #AB47BC;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._1200-color-purple-500 {
+    color: #9C27B0;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._1200-bgc-purple-500 {
+    background-color: #9C27B0;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._1200-hover-color-purple-500:hover {
+    color: #9C27B0;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._1200-hover-bgc-purple-500:hover {
+    background-color: #9C27B0;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._1200-color-purple-600 {
+    color: #8E24AA;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._1200-bgc-purple-600 {
+    background-color: #8E24AA;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._1200-hover-color-purple-600:hover {
+    color: #8E24AA;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._1200-hover-bgc-purple-600:hover {
+    background-color: #8E24AA;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._1200-color-purple-700 {
+    color: #7B1FA2;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._1200-bgc-purple-700 {
+    background-color: #7B1FA2;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._1200-hover-color-purple-700:hover {
+    color: #7B1FA2;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._1200-hover-bgc-purple-700:hover {
+    background-color: #7B1FA2;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._1200-color-purple-800 {
+    color: #6A1B9A;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._1200-bgc-purple-800 {
+    background-color: #6A1B9A;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._1200-hover-color-purple-800:hover {
+    color: #6A1B9A;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._1200-hover-bgc-purple-800:hover {
+    background-color: #6A1B9A;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._1200-color-purple-900 {
+    color: #4A148C;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._1200-bgc-purple-900 {
+    background-color: #4A148C;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._1200-hover-color-purple-900:hover {
+    color: #4A148C;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._1200-hover-bgc-purple-900:hover {
+    background-color: #4A148C;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._1200-color-purple-A100 {
+    color: #EA80FC;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._1200-bgc-purple-A100 {
+    background-color: #EA80FC;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._1200-hover-color-purple-A100:hover {
+    color: #EA80FC;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._1200-hover-bgc-purple-A100:hover {
+    background-color: #EA80FC;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._1200-color-purple-A200 {
+    color: #E040FB;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._1200-bgc-purple-A200 {
+    background-color: #E040FB;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._1200-hover-color-purple-A200:hover {
+    color: #E040FB;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._1200-hover-bgc-purple-A200:hover {
+    background-color: #E040FB;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._1200-color-purple-A400 {
+    color: #D500F9;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._1200-bgc-purple-A400 {
+    background-color: #D500F9;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._1200-hover-color-purple-A400:hover {
+    color: #D500F9;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._1200-hover-bgc-purple-A400:hover {
+    background-color: #D500F9;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._1200-color-purple-A700 {
+    color: #AA00FF;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._1200-bgc-purple-A700 {
+    background-color: #AA00FF;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._1200-hover-color-purple-A700:hover {
+    color: #AA00FF;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._1200-hover-bgc-purple-A700:hover {
+    background-color: #AA00FF;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* line 100, ../scss/_mixins.scss */
+  ._992-wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+
+  /* line 102, ../scss/_mixins.scss */
+  ._992-no-wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+
+  /* line 105, ../scss/_mixins.scss */
+  ._992-align-top {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+
+  /* line 106, ../scss/_mixins.scss */
+  ._992-align-center {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+
+  /* line 107, ../scss/_mixins.scss */
+  ._992-align-bottom {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+
+  /* line 109, ../scss/_mixins.scss */
+  ._container-flex ._992-align-top {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  /* line 110, ../scss/_mixins.scss */
+  ._container-flex ._992-align-center {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* line 111, ../scss/_mixins.scss */
+  ._container-flex ._992-align-bottom {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+  /* line 115, ../scss/_mixins.scss */
+  ._992-pull-left {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  /* line 116, ../scss/_mixins.scss */
+  ._992-pull-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  /* line 117, ../scss/_mixins.scss */
+  ._992-pull-right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  /* line 120, ../scss/_mixins.scss */
+  ._992-collapse {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  /* line 121, ../scss/_mixins.scss */
+  ._992-no-collapse {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  /* line 124, ../scss/_mixins.scss */
+  ._992-hide {
+    display: none;
+  }
+
+  /* line 125, ../scss/_mixins.scss */
+  ._992-show-block {
+    display: block;
+  }
+
+  /* line 126, ../scss/_mixins.scss */
+  ._992-show-inline {
+    display: inline;
+  }
+
+  /* line 129, ../scss/_mixins.scss */
+  ._992-text-left {
+    text-align: left;
+  }
+
+  /* line 130, ../scss/_mixins.scss */
+  ._992-text-center {
+    text-align: center;
+  }
+
+  /* line 131, ../scss/_mixins.scss */
+  ._992-text-right {
+    text-align: right;
+  }
+
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-1 {
+    width: 1%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-2 {
+    width: 2%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-3 {
+    width: 3%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-4 {
+    width: 4%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-5 {
+    width: 5%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-6 {
+    width: 6%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-7 {
+    width: 7%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-8 {
+    width: 8%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-9 {
+    width: 9%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-10 {
+    width: 10%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-11 {
+    width: 11%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-12 {
+    width: 12%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-13 {
+    width: 13%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-14 {
+    width: 14%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-15 {
+    width: 15%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-16 {
+    width: 16%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-17 {
+    width: 17%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-18 {
+    width: 18%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-19 {
+    width: 19%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-20 {
+    width: 20%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-21 {
+    width: 21%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-22 {
+    width: 22%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-23 {
+    width: 23%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-24 {
+    width: 24%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-25 {
+    width: 25%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-26 {
+    width: 26%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-27 {
+    width: 27%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-28 {
+    width: 28%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-29 {
+    width: 29%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-30 {
+    width: 30%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-31 {
+    width: 31%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-32 {
+    width: 32%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-33 {
+    width: 33%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-34 {
+    width: 34%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-35 {
+    width: 35%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-36 {
+    width: 36%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-37 {
+    width: 37%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-38 {
+    width: 38%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-39 {
+    width: 39%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-40 {
+    width: 40%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-41 {
+    width: 41%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-42 {
+    width: 42%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-43 {
+    width: 43%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-44 {
+    width: 44%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-45 {
+    width: 45%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-46 {
+    width: 46%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-47 {
+    width: 47%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-48 {
+    width: 48%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-49 {
+    width: 49%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-50 {
+    width: 50%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-51 {
+    width: 51%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-52 {
+    width: 52%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-53 {
+    width: 53%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-54 {
+    width: 54%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-55 {
+    width: 55%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-56 {
+    width: 56%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-57 {
+    width: 57%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-58 {
+    width: 58%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-59 {
+    width: 59%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-60 {
+    width: 60%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-61 {
+    width: 61%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-62 {
+    width: 62%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-63 {
+    width: 63%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-64 {
+    width: 64%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-65 {
+    width: 65%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-66 {
+    width: 66%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-67 {
+    width: 67%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-68 {
+    width: 68%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-69 {
+    width: 69%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-70 {
+    width: 70%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-71 {
+    width: 71%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-72 {
+    width: 72%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-73 {
+    width: 73%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-74 {
+    width: 74%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-75 {
+    width: 75%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-76 {
+    width: 76%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-77 {
+    width: 77%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-78 {
+    width: 78%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-79 {
+    width: 79%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-80 {
+    width: 80%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-81 {
+    width: 81%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-82 {
+    width: 82%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-83 {
+    width: 83%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-84 {
+    width: 84%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-85 {
+    width: 85%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-86 {
+    width: 86%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-87 {
+    width: 87%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-88 {
+    width: 88%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-89 {
+    width: 89%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-90 {
+    width: 90%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-91 {
+    width: 91%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-92 {
+    width: 92%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-93 {
+    width: 93%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-94 {
+    width: 94%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-95 {
+    width: 95%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-96 {
+    width: 96%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-97 {
+    width: 97%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-98 {
+    width: 98%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-99 {
+    width: 99%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._992-box-100 {
+    width: 100%;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._992-m-5 {
+    margin: 5px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._992-m-t-5 {
+    margin-top: 5px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._992-m-r-5 {
+    margin-right: 5px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._992-m-b-5 {
+    margin-bottom: 5px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._992-m-l-5 {
+    margin-left: 5px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._992-p-5 {
+    padding: 5px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._992-p-t-5 {
+    padding-top: 5px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._992-p-r-5 {
+    padding-right: 5px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._992-p-b-5 {
+    padding-bottom: 5px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._992-p-l-5 {
+    padding-left: 5px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._992-m-10 {
+    margin: 10px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._992-m-t-10 {
+    margin-top: 10px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._992-m-r-10 {
+    margin-right: 10px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._992-m-b-10 {
+    margin-bottom: 10px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._992-m-l-10 {
+    margin-left: 10px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._992-p-10 {
+    padding: 10px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._992-p-t-10 {
+    padding-top: 10px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._992-p-r-10 {
+    padding-right: 10px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._992-p-b-10 {
+    padding-bottom: 10px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._992-p-l-10 {
+    padding-left: 10px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._992-m-15 {
+    margin: 15px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._992-m-t-15 {
+    margin-top: 15px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._992-m-r-15 {
+    margin-right: 15px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._992-m-b-15 {
+    margin-bottom: 15px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._992-m-l-15 {
+    margin-left: 15px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._992-p-15 {
+    padding: 15px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._992-p-t-15 {
+    padding-top: 15px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._992-p-r-15 {
+    padding-right: 15px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._992-p-b-15 {
+    padding-bottom: 15px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._992-p-l-15 {
+    padding-left: 15px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._992-m-20 {
+    margin: 20px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._992-m-t-20 {
+    margin-top: 20px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._992-m-r-20 {
+    margin-right: 20px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._992-m-b-20 {
+    margin-bottom: 20px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._992-m-l-20 {
+    margin-left: 20px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._992-p-20 {
+    padding: 20px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._992-p-t-20 {
+    padding-top: 20px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._992-p-r-20 {
+    padding-right: 20px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._992-p-b-20 {
+    padding-bottom: 20px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._992-p-l-20 {
+    padding-left: 20px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._992-m-25 {
+    margin: 25px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._992-m-t-25 {
+    margin-top: 25px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._992-m-r-25 {
+    margin-right: 25px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._992-m-b-25 {
+    margin-bottom: 25px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._992-m-l-25 {
+    margin-left: 25px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._992-p-25 {
+    padding: 25px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._992-p-t-25 {
+    padding-top: 25px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._992-p-r-25 {
+    padding-right: 25px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._992-p-b-25 {
+    padding-bottom: 25px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._992-p-l-25 {
+    padding-left: 25px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._992-m-30 {
+    margin: 30px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._992-m-t-30 {
+    margin-top: 30px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._992-m-r-30 {
+    margin-right: 30px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._992-m-b-30 {
+    margin-bottom: 30px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._992-m-l-30 {
+    margin-left: 30px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._992-p-30 {
+    padding: 30px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._992-p-t-30 {
+    padding-top: 30px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._992-p-r-30 {
+    padding-right: 30px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._992-p-b-30 {
+    padding-bottom: 30px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._992-p-l-30 {
+    padding-left: 30px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._992-m-35 {
+    margin: 35px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._992-m-t-35 {
+    margin-top: 35px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._992-m-r-35 {
+    margin-right: 35px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._992-m-b-35 {
+    margin-bottom: 35px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._992-m-l-35 {
+    margin-left: 35px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._992-p-35 {
+    padding: 35px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._992-p-t-35 {
+    padding-top: 35px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._992-p-r-35 {
+    padding-right: 35px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._992-p-b-35 {
+    padding-bottom: 35px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._992-p-l-35 {
+    padding-left: 35px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._992-m-40 {
+    margin: 40px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._992-m-t-40 {
+    margin-top: 40px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._992-m-r-40 {
+    margin-right: 40px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._992-m-b-40 {
+    margin-bottom: 40px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._992-m-l-40 {
+    margin-left: 40px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._992-p-40 {
+    padding: 40px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._992-p-t-40 {
+    padding-top: 40px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._992-p-r-40 {
+    padding-right: 40px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._992-p-b-40 {
+    padding-bottom: 40px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._992-p-l-40 {
+    padding-left: 40px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._992-m-45 {
+    margin: 45px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._992-m-t-45 {
+    margin-top: 45px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._992-m-r-45 {
+    margin-right: 45px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._992-m-b-45 {
+    margin-bottom: 45px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._992-m-l-45 {
+    margin-left: 45px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._992-p-45 {
+    padding: 45px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._992-p-t-45 {
+    padding-top: 45px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._992-p-r-45 {
+    padding-right: 45px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._992-p-b-45 {
+    padding-bottom: 45px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._992-p-l-45 {
+    padding-left: 45px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._992-m-50 {
+    margin: 50px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._992-m-t-50 {
+    margin-top: 50px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._992-m-r-50 {
+    margin-right: 50px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._992-m-b-50 {
+    margin-bottom: 50px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._992-m-l-50 {
+    margin-left: 50px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._992-p-50 {
+    padding: 50px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._992-p-t-50 {
+    padding-top: 50px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._992-p-r-50 {
+    padding-right: 50px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._992-p-b-50 {
+    padding-bottom: 50px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._992-p-l-50 {
+    padding-left: 50px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._992-m-auto {
+    margin: auto;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._992-m-t-auto {
+    margin-top: auto;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._992-m-r-auto {
+    margin-right: auto;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._992-m-b-auto {
+    margin-bottom: auto;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._992-m-l-auto {
+    margin-left: auto;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._992-p-auto {
+    padding: auto;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._992-p-t-auto {
+    padding-top: auto;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._992-p-r-auto {
+    padding-right: auto;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._992-p-b-auto {
+    padding-bottom: auto;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._992-p-l-auto {
+    padding-left: auto;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-8 {
+    font-size: 8px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-9 {
+    font-size: 9px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-10 {
+    font-size: 10px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-11 {
+    font-size: 11px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-12 {
+    font-size: 12px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-13 {
+    font-size: 13px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-14 {
+    font-size: 14px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-15 {
+    font-size: 15px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-16 {
+    font-size: 16px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-17 {
+    font-size: 17px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-18 {
+    font-size: 18px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-19 {
+    font-size: 19px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-20 {
+    font-size: 20px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-21 {
+    font-size: 21px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-22 {
+    font-size: 22px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-23 {
+    font-size: 23px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-24 {
+    font-size: 24px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-25 {
+    font-size: 25px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-26 {
+    font-size: 26px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-27 {
+    font-size: 27px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-28 {
+    font-size: 28px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-29 {
+    font-size: 29px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-30 {
+    font-size: 30px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-31 {
+    font-size: 31px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-32 {
+    font-size: 32px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-33 {
+    font-size: 33px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-34 {
+    font-size: 34px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-35 {
+    font-size: 35px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-36 {
+    font-size: 36px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-37 {
+    font-size: 37px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-38 {
+    font-size: 38px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-39 {
+    font-size: 39px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-40 {
+    font-size: 40px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-41 {
+    font-size: 41px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-42 {
+    font-size: 42px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-43 {
+    font-size: 43px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-44 {
+    font-size: 44px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-45 {
+    font-size: 45px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-46 {
+    font-size: 46px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-47 {
+    font-size: 47px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-48 {
+    font-size: 48px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-49 {
+    font-size: 49px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._992-f-s-50 {
+    font-size: 50px;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._992-color-purple-50 {
+    color: #F3E5F5;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._992-bgc-purple-50 {
+    background-color: #F3E5F5;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._992-hover-color-purple-50:hover {
+    color: #F3E5F5;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._992-hover-bgc-purple-50:hover {
+    background-color: #F3E5F5;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._992-color-purple-100 {
+    color: #E1BEE7;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._992-bgc-purple-100 {
+    background-color: #E1BEE7;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._992-hover-color-purple-100:hover {
+    color: #E1BEE7;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._992-hover-bgc-purple-100:hover {
+    background-color: #E1BEE7;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._992-color-purple-200 {
+    color: #CE93D8;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._992-bgc-purple-200 {
+    background-color: #CE93D8;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._992-hover-color-purple-200:hover {
+    color: #CE93D8;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._992-hover-bgc-purple-200:hover {
+    background-color: #CE93D8;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._992-color-purple-300 {
+    color: #BA68C8;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._992-bgc-purple-300 {
+    background-color: #BA68C8;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._992-hover-color-purple-300:hover {
+    color: #BA68C8;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._992-hover-bgc-purple-300:hover {
+    background-color: #BA68C8;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._992-color-purple-400 {
+    color: #AB47BC;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._992-bgc-purple-400 {
+    background-color: #AB47BC;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._992-hover-color-purple-400:hover {
+    color: #AB47BC;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._992-hover-bgc-purple-400:hover {
+    background-color: #AB47BC;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._992-color-purple-500 {
+    color: #9C27B0;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._992-bgc-purple-500 {
+    background-color: #9C27B0;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._992-hover-color-purple-500:hover {
+    color: #9C27B0;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._992-hover-bgc-purple-500:hover {
+    background-color: #9C27B0;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._992-color-purple-600 {
+    color: #8E24AA;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._992-bgc-purple-600 {
+    background-color: #8E24AA;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._992-hover-color-purple-600:hover {
+    color: #8E24AA;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._992-hover-bgc-purple-600:hover {
+    background-color: #8E24AA;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._992-color-purple-700 {
+    color: #7B1FA2;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._992-bgc-purple-700 {
+    background-color: #7B1FA2;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._992-hover-color-purple-700:hover {
+    color: #7B1FA2;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._992-hover-bgc-purple-700:hover {
+    background-color: #7B1FA2;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._992-color-purple-800 {
+    color: #6A1B9A;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._992-bgc-purple-800 {
+    background-color: #6A1B9A;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._992-hover-color-purple-800:hover {
+    color: #6A1B9A;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._992-hover-bgc-purple-800:hover {
+    background-color: #6A1B9A;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._992-color-purple-900 {
+    color: #4A148C;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._992-bgc-purple-900 {
+    background-color: #4A148C;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._992-hover-color-purple-900:hover {
+    color: #4A148C;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._992-hover-bgc-purple-900:hover {
+    background-color: #4A148C;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._992-color-purple-A100 {
+    color: #EA80FC;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._992-bgc-purple-A100 {
+    background-color: #EA80FC;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._992-hover-color-purple-A100:hover {
+    color: #EA80FC;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._992-hover-bgc-purple-A100:hover {
+    background-color: #EA80FC;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._992-color-purple-A200 {
+    color: #E040FB;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._992-bgc-purple-A200 {
+    background-color: #E040FB;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._992-hover-color-purple-A200:hover {
+    color: #E040FB;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._992-hover-bgc-purple-A200:hover {
+    background-color: #E040FB;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._992-color-purple-A400 {
+    color: #D500F9;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._992-bgc-purple-A400 {
+    background-color: #D500F9;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._992-hover-color-purple-A400:hover {
+    color: #D500F9;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._992-hover-bgc-purple-A400:hover {
+    background-color: #D500F9;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._992-color-purple-A700 {
+    color: #AA00FF;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._992-bgc-purple-A700 {
+    background-color: #AA00FF;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._992-hover-color-purple-A700:hover {
+    color: #AA00FF;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._992-hover-bgc-purple-A700:hover {
+    background-color: #AA00FF;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 100, ../scss/_mixins.scss */
+  ._768-wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+
+  /* line 102, ../scss/_mixins.scss */
+  ._768-no-wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+
+  /* line 105, ../scss/_mixins.scss */
+  ._768-align-top {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+
+  /* line 106, ../scss/_mixins.scss */
+  ._768-align-center {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+
+  /* line 107, ../scss/_mixins.scss */
+  ._768-align-bottom {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+
+  /* line 109, ../scss/_mixins.scss */
+  ._container-flex ._768-align-top {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  /* line 110, ../scss/_mixins.scss */
+  ._container-flex ._768-align-center {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* line 111, ../scss/_mixins.scss */
+  ._container-flex ._768-align-bottom {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+  /* line 115, ../scss/_mixins.scss */
+  ._768-pull-left {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  /* line 116, ../scss/_mixins.scss */
+  ._768-pull-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  /* line 117, ../scss/_mixins.scss */
+  ._768-pull-right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  /* line 120, ../scss/_mixins.scss */
+  ._768-collapse {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  /* line 121, ../scss/_mixins.scss */
+  ._768-no-collapse {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  /* line 124, ../scss/_mixins.scss */
+  ._768-hide {
+    display: none;
+  }
+
+  /* line 125, ../scss/_mixins.scss */
+  ._768-show-block {
+    display: block;
+  }
+
+  /* line 126, ../scss/_mixins.scss */
+  ._768-show-inline {
+    display: inline;
+  }
+
+  /* line 129, ../scss/_mixins.scss */
+  ._768-text-left {
+    text-align: left;
+  }
+
+  /* line 130, ../scss/_mixins.scss */
+  ._768-text-center {
+    text-align: center;
+  }
+
+  /* line 131, ../scss/_mixins.scss */
+  ._768-text-right {
+    text-align: right;
+  }
+
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-1 {
+    width: 1%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-2 {
+    width: 2%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-3 {
+    width: 3%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-4 {
+    width: 4%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-5 {
+    width: 5%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-6 {
+    width: 6%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-7 {
+    width: 7%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-8 {
+    width: 8%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-9 {
+    width: 9%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-10 {
+    width: 10%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-11 {
+    width: 11%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-12 {
+    width: 12%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-13 {
+    width: 13%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-14 {
+    width: 14%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-15 {
+    width: 15%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-16 {
+    width: 16%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-17 {
+    width: 17%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-18 {
+    width: 18%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-19 {
+    width: 19%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-20 {
+    width: 20%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-21 {
+    width: 21%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-22 {
+    width: 22%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-23 {
+    width: 23%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-24 {
+    width: 24%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-25 {
+    width: 25%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-26 {
+    width: 26%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-27 {
+    width: 27%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-28 {
+    width: 28%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-29 {
+    width: 29%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-30 {
+    width: 30%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-31 {
+    width: 31%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-32 {
+    width: 32%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-33 {
+    width: 33%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-34 {
+    width: 34%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-35 {
+    width: 35%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-36 {
+    width: 36%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-37 {
+    width: 37%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-38 {
+    width: 38%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-39 {
+    width: 39%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-40 {
+    width: 40%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-41 {
+    width: 41%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-42 {
+    width: 42%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-43 {
+    width: 43%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-44 {
+    width: 44%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-45 {
+    width: 45%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-46 {
+    width: 46%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-47 {
+    width: 47%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-48 {
+    width: 48%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-49 {
+    width: 49%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-50 {
+    width: 50%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-51 {
+    width: 51%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-52 {
+    width: 52%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-53 {
+    width: 53%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-54 {
+    width: 54%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-55 {
+    width: 55%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-56 {
+    width: 56%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-57 {
+    width: 57%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-58 {
+    width: 58%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-59 {
+    width: 59%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-60 {
+    width: 60%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-61 {
+    width: 61%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-62 {
+    width: 62%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-63 {
+    width: 63%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-64 {
+    width: 64%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-65 {
+    width: 65%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-66 {
+    width: 66%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-67 {
+    width: 67%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-68 {
+    width: 68%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-69 {
+    width: 69%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-70 {
+    width: 70%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-71 {
+    width: 71%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-72 {
+    width: 72%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-73 {
+    width: 73%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-74 {
+    width: 74%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-75 {
+    width: 75%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-76 {
+    width: 76%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-77 {
+    width: 77%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-78 {
+    width: 78%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-79 {
+    width: 79%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-80 {
+    width: 80%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-81 {
+    width: 81%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-82 {
+    width: 82%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-83 {
+    width: 83%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-84 {
+    width: 84%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-85 {
+    width: 85%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-86 {
+    width: 86%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-87 {
+    width: 87%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-88 {
+    width: 88%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-89 {
+    width: 89%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-90 {
+    width: 90%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-91 {
+    width: 91%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-92 {
+    width: 92%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-93 {
+    width: 93%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-94 {
+    width: 94%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-95 {
+    width: 95%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-96 {
+    width: 96%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-97 {
+    width: 97%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-98 {
+    width: 98%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-99 {
+    width: 99%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._768-box-100 {
+    width: 100%;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._768-m-5 {
+    margin: 5px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._768-m-t-5 {
+    margin-top: 5px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._768-m-r-5 {
+    margin-right: 5px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._768-m-b-5 {
+    margin-bottom: 5px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._768-m-l-5 {
+    margin-left: 5px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._768-p-5 {
+    padding: 5px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._768-p-t-5 {
+    padding-top: 5px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._768-p-r-5 {
+    padding-right: 5px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._768-p-b-5 {
+    padding-bottom: 5px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._768-p-l-5 {
+    padding-left: 5px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._768-m-10 {
+    margin: 10px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._768-m-t-10 {
+    margin-top: 10px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._768-m-r-10 {
+    margin-right: 10px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._768-m-b-10 {
+    margin-bottom: 10px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._768-m-l-10 {
+    margin-left: 10px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._768-p-10 {
+    padding: 10px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._768-p-t-10 {
+    padding-top: 10px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._768-p-r-10 {
+    padding-right: 10px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._768-p-b-10 {
+    padding-bottom: 10px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._768-p-l-10 {
+    padding-left: 10px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._768-m-15 {
+    margin: 15px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._768-m-t-15 {
+    margin-top: 15px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._768-m-r-15 {
+    margin-right: 15px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._768-m-b-15 {
+    margin-bottom: 15px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._768-m-l-15 {
+    margin-left: 15px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._768-p-15 {
+    padding: 15px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._768-p-t-15 {
+    padding-top: 15px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._768-p-r-15 {
+    padding-right: 15px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._768-p-b-15 {
+    padding-bottom: 15px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._768-p-l-15 {
+    padding-left: 15px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._768-m-20 {
+    margin: 20px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._768-m-t-20 {
+    margin-top: 20px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._768-m-r-20 {
+    margin-right: 20px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._768-m-b-20 {
+    margin-bottom: 20px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._768-m-l-20 {
+    margin-left: 20px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._768-p-20 {
+    padding: 20px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._768-p-t-20 {
+    padding-top: 20px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._768-p-r-20 {
+    padding-right: 20px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._768-p-b-20 {
+    padding-bottom: 20px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._768-p-l-20 {
+    padding-left: 20px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._768-m-25 {
+    margin: 25px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._768-m-t-25 {
+    margin-top: 25px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._768-m-r-25 {
+    margin-right: 25px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._768-m-b-25 {
+    margin-bottom: 25px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._768-m-l-25 {
+    margin-left: 25px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._768-p-25 {
+    padding: 25px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._768-p-t-25 {
+    padding-top: 25px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._768-p-r-25 {
+    padding-right: 25px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._768-p-b-25 {
+    padding-bottom: 25px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._768-p-l-25 {
+    padding-left: 25px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._768-m-30 {
+    margin: 30px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._768-m-t-30 {
+    margin-top: 30px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._768-m-r-30 {
+    margin-right: 30px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._768-m-b-30 {
+    margin-bottom: 30px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._768-m-l-30 {
+    margin-left: 30px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._768-p-30 {
+    padding: 30px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._768-p-t-30 {
+    padding-top: 30px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._768-p-r-30 {
+    padding-right: 30px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._768-p-b-30 {
+    padding-bottom: 30px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._768-p-l-30 {
+    padding-left: 30px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._768-m-35 {
+    margin: 35px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._768-m-t-35 {
+    margin-top: 35px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._768-m-r-35 {
+    margin-right: 35px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._768-m-b-35 {
+    margin-bottom: 35px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._768-m-l-35 {
+    margin-left: 35px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._768-p-35 {
+    padding: 35px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._768-p-t-35 {
+    padding-top: 35px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._768-p-r-35 {
+    padding-right: 35px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._768-p-b-35 {
+    padding-bottom: 35px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._768-p-l-35 {
+    padding-left: 35px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._768-m-40 {
+    margin: 40px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._768-m-t-40 {
+    margin-top: 40px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._768-m-r-40 {
+    margin-right: 40px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._768-m-b-40 {
+    margin-bottom: 40px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._768-m-l-40 {
+    margin-left: 40px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._768-p-40 {
+    padding: 40px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._768-p-t-40 {
+    padding-top: 40px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._768-p-r-40 {
+    padding-right: 40px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._768-p-b-40 {
+    padding-bottom: 40px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._768-p-l-40 {
+    padding-left: 40px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._768-m-45 {
+    margin: 45px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._768-m-t-45 {
+    margin-top: 45px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._768-m-r-45 {
+    margin-right: 45px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._768-m-b-45 {
+    margin-bottom: 45px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._768-m-l-45 {
+    margin-left: 45px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._768-p-45 {
+    padding: 45px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._768-p-t-45 {
+    padding-top: 45px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._768-p-r-45 {
+    padding-right: 45px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._768-p-b-45 {
+    padding-bottom: 45px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._768-p-l-45 {
+    padding-left: 45px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._768-m-50 {
+    margin: 50px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._768-m-t-50 {
+    margin-top: 50px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._768-m-r-50 {
+    margin-right: 50px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._768-m-b-50 {
+    margin-bottom: 50px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._768-m-l-50 {
+    margin-left: 50px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._768-p-50 {
+    padding: 50px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._768-p-t-50 {
+    padding-top: 50px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._768-p-r-50 {
+    padding-right: 50px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._768-p-b-50 {
+    padding-bottom: 50px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._768-p-l-50 {
+    padding-left: 50px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._768-m-auto {
+    margin: auto;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._768-m-t-auto {
+    margin-top: auto;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._768-m-r-auto {
+    margin-right: auto;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._768-m-b-auto {
+    margin-bottom: auto;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._768-m-l-auto {
+    margin-left: auto;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._768-p-auto {
+    padding: auto;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._768-p-t-auto {
+    padding-top: auto;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._768-p-r-auto {
+    padding-right: auto;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._768-p-b-auto {
+    padding-bottom: auto;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._768-p-l-auto {
+    padding-left: auto;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-8 {
+    font-size: 8px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-9 {
+    font-size: 9px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-10 {
+    font-size: 10px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-11 {
+    font-size: 11px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-12 {
+    font-size: 12px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-13 {
+    font-size: 13px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-14 {
+    font-size: 14px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-15 {
+    font-size: 15px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-16 {
+    font-size: 16px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-17 {
+    font-size: 17px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-18 {
+    font-size: 18px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-19 {
+    font-size: 19px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-20 {
+    font-size: 20px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-21 {
+    font-size: 21px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-22 {
+    font-size: 22px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-23 {
+    font-size: 23px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-24 {
+    font-size: 24px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-25 {
+    font-size: 25px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-26 {
+    font-size: 26px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-27 {
+    font-size: 27px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-28 {
+    font-size: 28px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-29 {
+    font-size: 29px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-30 {
+    font-size: 30px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-31 {
+    font-size: 31px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-32 {
+    font-size: 32px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-33 {
+    font-size: 33px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-34 {
+    font-size: 34px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-35 {
+    font-size: 35px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-36 {
+    font-size: 36px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-37 {
+    font-size: 37px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-38 {
+    font-size: 38px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-39 {
+    font-size: 39px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-40 {
+    font-size: 40px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-41 {
+    font-size: 41px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-42 {
+    font-size: 42px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-43 {
+    font-size: 43px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-44 {
+    font-size: 44px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-45 {
+    font-size: 45px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-46 {
+    font-size: 46px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-47 {
+    font-size: 47px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-48 {
+    font-size: 48px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-49 {
+    font-size: 49px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._768-f-s-50 {
+    font-size: 50px;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._768-color-purple-50 {
+    color: #F3E5F5;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._768-bgc-purple-50 {
+    background-color: #F3E5F5;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._768-hover-color-purple-50:hover {
+    color: #F3E5F5;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._768-hover-bgc-purple-50:hover {
+    background-color: #F3E5F5;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._768-color-purple-100 {
+    color: #E1BEE7;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._768-bgc-purple-100 {
+    background-color: #E1BEE7;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._768-hover-color-purple-100:hover {
+    color: #E1BEE7;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._768-hover-bgc-purple-100:hover {
+    background-color: #E1BEE7;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._768-color-purple-200 {
+    color: #CE93D8;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._768-bgc-purple-200 {
+    background-color: #CE93D8;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._768-hover-color-purple-200:hover {
+    color: #CE93D8;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._768-hover-bgc-purple-200:hover {
+    background-color: #CE93D8;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._768-color-purple-300 {
+    color: #BA68C8;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._768-bgc-purple-300 {
+    background-color: #BA68C8;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._768-hover-color-purple-300:hover {
+    color: #BA68C8;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._768-hover-bgc-purple-300:hover {
+    background-color: #BA68C8;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._768-color-purple-400 {
+    color: #AB47BC;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._768-bgc-purple-400 {
+    background-color: #AB47BC;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._768-hover-color-purple-400:hover {
+    color: #AB47BC;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._768-hover-bgc-purple-400:hover {
+    background-color: #AB47BC;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._768-color-purple-500 {
+    color: #9C27B0;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._768-bgc-purple-500 {
+    background-color: #9C27B0;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._768-hover-color-purple-500:hover {
+    color: #9C27B0;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._768-hover-bgc-purple-500:hover {
+    background-color: #9C27B0;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._768-color-purple-600 {
+    color: #8E24AA;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._768-bgc-purple-600 {
+    background-color: #8E24AA;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._768-hover-color-purple-600:hover {
+    color: #8E24AA;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._768-hover-bgc-purple-600:hover {
+    background-color: #8E24AA;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._768-color-purple-700 {
+    color: #7B1FA2;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._768-bgc-purple-700 {
+    background-color: #7B1FA2;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._768-hover-color-purple-700:hover {
+    color: #7B1FA2;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._768-hover-bgc-purple-700:hover {
+    background-color: #7B1FA2;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._768-color-purple-800 {
+    color: #6A1B9A;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._768-bgc-purple-800 {
+    background-color: #6A1B9A;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._768-hover-color-purple-800:hover {
+    color: #6A1B9A;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._768-hover-bgc-purple-800:hover {
+    background-color: #6A1B9A;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._768-color-purple-900 {
+    color: #4A148C;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._768-bgc-purple-900 {
+    background-color: #4A148C;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._768-hover-color-purple-900:hover {
+    color: #4A148C;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._768-hover-bgc-purple-900:hover {
+    background-color: #4A148C;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._768-color-purple-A100 {
+    color: #EA80FC;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._768-bgc-purple-A100 {
+    background-color: #EA80FC;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._768-hover-color-purple-A100:hover {
+    color: #EA80FC;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._768-hover-bgc-purple-A100:hover {
+    background-color: #EA80FC;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._768-color-purple-A200 {
+    color: #E040FB;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._768-bgc-purple-A200 {
+    background-color: #E040FB;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._768-hover-color-purple-A200:hover {
+    color: #E040FB;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._768-hover-bgc-purple-A200:hover {
+    background-color: #E040FB;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._768-color-purple-A400 {
+    color: #D500F9;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._768-bgc-purple-A400 {
+    background-color: #D500F9;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._768-hover-color-purple-A400:hover {
+    color: #D500F9;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._768-hover-bgc-purple-A400:hover {
+    background-color: #D500F9;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._768-color-purple-A700 {
+    color: #AA00FF;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._768-bgc-purple-A700 {
+    background-color: #AA00FF;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._768-hover-color-purple-A700:hover {
+    color: #AA00FF;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._768-hover-bgc-purple-A700:hover {
+    background-color: #AA00FF;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 100, ../scss/_mixins.scss */
+  ._480-wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+
+  /* line 102, ../scss/_mixins.scss */
+  ._480-no-wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+
+  /* line 105, ../scss/_mixins.scss */
+  ._480-align-top {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+
+  /* line 106, ../scss/_mixins.scss */
+  ._480-align-center {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+
+  /* line 107, ../scss/_mixins.scss */
+  ._480-align-bottom {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+
+  /* line 109, ../scss/_mixins.scss */
+  ._container-flex ._480-align-top {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  /* line 110, ../scss/_mixins.scss */
+  ._container-flex ._480-align-center {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* line 111, ../scss/_mixins.scss */
+  ._container-flex ._480-align-bottom {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+  /* line 115, ../scss/_mixins.scss */
+  ._480-pull-left {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  /* line 116, ../scss/_mixins.scss */
+  ._480-pull-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  /* line 117, ../scss/_mixins.scss */
+  ._480-pull-right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  /* line 120, ../scss/_mixins.scss */
+  ._480-collapse {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  /* line 121, ../scss/_mixins.scss */
+  ._480-no-collapse {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  /* line 124, ../scss/_mixins.scss */
+  ._480-hide {
+    display: none;
+  }
+
+  /* line 125, ../scss/_mixins.scss */
+  ._480-show-block {
+    display: block;
+  }
+
+  /* line 126, ../scss/_mixins.scss */
+  ._480-show-inline {
+    display: inline;
+  }
+
+  /* line 129, ../scss/_mixins.scss */
+  ._480-text-left {
+    text-align: left;
+  }
+
+  /* line 130, ../scss/_mixins.scss */
+  ._480-text-center {
+    text-align: center;
+  }
+
+  /* line 131, ../scss/_mixins.scss */
+  ._480-text-right {
+    text-align: right;
+  }
+
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-1 {
+    width: 1%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-2 {
+    width: 2%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-3 {
+    width: 3%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-4 {
+    width: 4%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-5 {
+    width: 5%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-6 {
+    width: 6%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-7 {
+    width: 7%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-8 {
+    width: 8%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-9 {
+    width: 9%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-10 {
+    width: 10%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-11 {
+    width: 11%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-12 {
+    width: 12%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-13 {
+    width: 13%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-14 {
+    width: 14%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-15 {
+    width: 15%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-16 {
+    width: 16%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-17 {
+    width: 17%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-18 {
+    width: 18%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-19 {
+    width: 19%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-20 {
+    width: 20%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-21 {
+    width: 21%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-22 {
+    width: 22%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-23 {
+    width: 23%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-24 {
+    width: 24%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-25 {
+    width: 25%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-26 {
+    width: 26%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-27 {
+    width: 27%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-28 {
+    width: 28%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-29 {
+    width: 29%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-30 {
+    width: 30%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-31 {
+    width: 31%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-32 {
+    width: 32%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-33 {
+    width: 33%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-34 {
+    width: 34%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-35 {
+    width: 35%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-36 {
+    width: 36%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-37 {
+    width: 37%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-38 {
+    width: 38%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-39 {
+    width: 39%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-40 {
+    width: 40%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-41 {
+    width: 41%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-42 {
+    width: 42%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-43 {
+    width: 43%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-44 {
+    width: 44%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-45 {
+    width: 45%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-46 {
+    width: 46%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-47 {
+    width: 47%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-48 {
+    width: 48%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-49 {
+    width: 49%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-50 {
+    width: 50%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-51 {
+    width: 51%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-52 {
+    width: 52%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-53 {
+    width: 53%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-54 {
+    width: 54%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-55 {
+    width: 55%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-56 {
+    width: 56%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-57 {
+    width: 57%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-58 {
+    width: 58%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-59 {
+    width: 59%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-60 {
+    width: 60%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-61 {
+    width: 61%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-62 {
+    width: 62%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-63 {
+    width: 63%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-64 {
+    width: 64%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-65 {
+    width: 65%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-66 {
+    width: 66%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-67 {
+    width: 67%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-68 {
+    width: 68%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-69 {
+    width: 69%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-70 {
+    width: 70%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-71 {
+    width: 71%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-72 {
+    width: 72%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-73 {
+    width: 73%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-74 {
+    width: 74%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-75 {
+    width: 75%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-76 {
+    width: 76%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-77 {
+    width: 77%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-78 {
+    width: 78%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-79 {
+    width: 79%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-80 {
+    width: 80%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-81 {
+    width: 81%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-82 {
+    width: 82%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-83 {
+    width: 83%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-84 {
+    width: 84%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-85 {
+    width: 85%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-86 {
+    width: 86%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-87 {
+    width: 87%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-88 {
+    width: 88%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-89 {
+    width: 89%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-90 {
+    width: 90%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-91 {
+    width: 91%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-92 {
+    width: 92%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-93 {
+    width: 93%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-94 {
+    width: 94%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-95 {
+    width: 95%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-96 {
+    width: 96%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-97 {
+    width: 97%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-98 {
+    width: 98%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-99 {
+    width: 99%;
+  }
+  /* line 136, ../scss/_mixins.scss */
+  ._container-flex ._480-box-100 {
+    width: 100%;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._480-m-5 {
+    margin: 5px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._480-m-t-5 {
+    margin-top: 5px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._480-m-r-5 {
+    margin-right: 5px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._480-m-b-5 {
+    margin-bottom: 5px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._480-m-l-5 {
+    margin-left: 5px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._480-p-5 {
+    padding: 5px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._480-p-t-5 {
+    padding-top: 5px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._480-p-r-5 {
+    padding-right: 5px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._480-p-b-5 {
+    padding-bottom: 5px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._480-p-l-5 {
+    padding-left: 5px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._480-m-10 {
+    margin: 10px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._480-m-t-10 {
+    margin-top: 10px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._480-m-r-10 {
+    margin-right: 10px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._480-m-b-10 {
+    margin-bottom: 10px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._480-m-l-10 {
+    margin-left: 10px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._480-p-10 {
+    padding: 10px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._480-p-t-10 {
+    padding-top: 10px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._480-p-r-10 {
+    padding-right: 10px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._480-p-b-10 {
+    padding-bottom: 10px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._480-p-l-10 {
+    padding-left: 10px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._480-m-15 {
+    margin: 15px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._480-m-t-15 {
+    margin-top: 15px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._480-m-r-15 {
+    margin-right: 15px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._480-m-b-15 {
+    margin-bottom: 15px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._480-m-l-15 {
+    margin-left: 15px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._480-p-15 {
+    padding: 15px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._480-p-t-15 {
+    padding-top: 15px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._480-p-r-15 {
+    padding-right: 15px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._480-p-b-15 {
+    padding-bottom: 15px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._480-p-l-15 {
+    padding-left: 15px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._480-m-20 {
+    margin: 20px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._480-m-t-20 {
+    margin-top: 20px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._480-m-r-20 {
+    margin-right: 20px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._480-m-b-20 {
+    margin-bottom: 20px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._480-m-l-20 {
+    margin-left: 20px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._480-p-20 {
+    padding: 20px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._480-p-t-20 {
+    padding-top: 20px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._480-p-r-20 {
+    padding-right: 20px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._480-p-b-20 {
+    padding-bottom: 20px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._480-p-l-20 {
+    padding-left: 20px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._480-m-25 {
+    margin: 25px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._480-m-t-25 {
+    margin-top: 25px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._480-m-r-25 {
+    margin-right: 25px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._480-m-b-25 {
+    margin-bottom: 25px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._480-m-l-25 {
+    margin-left: 25px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._480-p-25 {
+    padding: 25px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._480-p-t-25 {
+    padding-top: 25px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._480-p-r-25 {
+    padding-right: 25px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._480-p-b-25 {
+    padding-bottom: 25px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._480-p-l-25 {
+    padding-left: 25px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._480-m-30 {
+    margin: 30px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._480-m-t-30 {
+    margin-top: 30px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._480-m-r-30 {
+    margin-right: 30px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._480-m-b-30 {
+    margin-bottom: 30px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._480-m-l-30 {
+    margin-left: 30px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._480-p-30 {
+    padding: 30px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._480-p-t-30 {
+    padding-top: 30px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._480-p-r-30 {
+    padding-right: 30px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._480-p-b-30 {
+    padding-bottom: 30px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._480-p-l-30 {
+    padding-left: 30px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._480-m-35 {
+    margin: 35px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._480-m-t-35 {
+    margin-top: 35px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._480-m-r-35 {
+    margin-right: 35px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._480-m-b-35 {
+    margin-bottom: 35px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._480-m-l-35 {
+    margin-left: 35px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._480-p-35 {
+    padding: 35px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._480-p-t-35 {
+    padding-top: 35px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._480-p-r-35 {
+    padding-right: 35px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._480-p-b-35 {
+    padding-bottom: 35px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._480-p-l-35 {
+    padding-left: 35px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._480-m-40 {
+    margin: 40px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._480-m-t-40 {
+    margin-top: 40px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._480-m-r-40 {
+    margin-right: 40px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._480-m-b-40 {
+    margin-bottom: 40px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._480-m-l-40 {
+    margin-left: 40px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._480-p-40 {
+    padding: 40px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._480-p-t-40 {
+    padding-top: 40px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._480-p-r-40 {
+    padding-right: 40px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._480-p-b-40 {
+    padding-bottom: 40px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._480-p-l-40 {
+    padding-left: 40px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._480-m-45 {
+    margin: 45px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._480-m-t-45 {
+    margin-top: 45px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._480-m-r-45 {
+    margin-right: 45px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._480-m-b-45 {
+    margin-bottom: 45px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._480-m-l-45 {
+    margin-left: 45px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._480-p-45 {
+    padding: 45px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._480-p-t-45 {
+    padding-top: 45px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._480-p-r-45 {
+    padding-right: 45px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._480-p-b-45 {
+    padding-bottom: 45px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._480-p-l-45 {
+    padding-left: 45px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._480-m-50 {
+    margin: 50px;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._480-m-t-50 {
+    margin-top: 50px;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._480-m-r-50 {
+    margin-right: 50px;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._480-m-b-50 {
+    margin-bottom: 50px;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._480-m-l-50 {
+    margin-left: 50px;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._480-p-50 {
+    padding: 50px;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._480-p-t-50 {
+    padding-top: 50px;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._480-p-r-50 {
+    padding-right: 50px;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._480-p-b-50 {
+    padding-bottom: 50px;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._480-p-l-50 {
+    padding-left: 50px;
+  }
+
+  /* line 146, ../scss/_mixins.scss */
+  ._480-m-auto {
+    margin: auto;
+  }
+
+  /* line 147, ../scss/_mixins.scss */
+  ._480-m-t-auto {
+    margin-top: auto;
+  }
+
+  /* line 148, ../scss/_mixins.scss */
+  ._480-m-r-auto {
+    margin-right: auto;
+  }
+
+  /* line 149, ../scss/_mixins.scss */
+  ._480-m-b-auto {
+    margin-bottom: auto;
+  }
+
+  /* line 150, ../scss/_mixins.scss */
+  ._480-m-l-auto {
+    margin-left: auto;
+  }
+
+  /* line 152, ../scss/_mixins.scss */
+  ._480-p-auto {
+    padding: auto;
+  }
+
+  /* line 153, ../scss/_mixins.scss */
+  ._480-p-t-auto {
+    padding-top: auto;
+  }
+
+  /* line 154, ../scss/_mixins.scss */
+  ._480-p-r-auto {
+    padding-right: auto;
+  }
+
+  /* line 155, ../scss/_mixins.scss */
+  ._480-p-b-auto {
+    padding-bottom: auto;
+  }
+
+  /* line 156, ../scss/_mixins.scss */
+  ._480-p-l-auto {
+    padding-left: auto;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-8 {
+    font-size: 8px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-9 {
+    font-size: 9px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-10 {
+    font-size: 10px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-11 {
+    font-size: 11px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-12 {
+    font-size: 12px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-13 {
+    font-size: 13px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-14 {
+    font-size: 14px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-15 {
+    font-size: 15px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-16 {
+    font-size: 16px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-17 {
+    font-size: 17px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-18 {
+    font-size: 18px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-19 {
+    font-size: 19px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-20 {
+    font-size: 20px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-21 {
+    font-size: 21px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-22 {
+    font-size: 22px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-23 {
+    font-size: 23px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-24 {
+    font-size: 24px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-25 {
+    font-size: 25px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-26 {
+    font-size: 26px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-27 {
+    font-size: 27px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-28 {
+    font-size: 28px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-29 {
+    font-size: 29px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-30 {
+    font-size: 30px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-31 {
+    font-size: 31px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-32 {
+    font-size: 32px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-33 {
+    font-size: 33px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-34 {
+    font-size: 34px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-35 {
+    font-size: 35px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-36 {
+    font-size: 36px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-37 {
+    font-size: 37px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-38 {
+    font-size: 38px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-39 {
+    font-size: 39px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-40 {
+    font-size: 40px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-41 {
+    font-size: 41px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-42 {
+    font-size: 42px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-43 {
+    font-size: 43px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-44 {
+    font-size: 44px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-45 {
+    font-size: 45px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-46 {
+    font-size: 46px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-47 {
+    font-size: 47px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-48 {
+    font-size: 48px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-49 {
+    font-size: 49px;
+  }
+
+  /* line 162, ../scss/_mixins.scss */
+  ._480-f-s-50 {
+    font-size: 50px;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._480-color-purple-50 {
+    color: #F3E5F5;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._480-bgc-purple-50 {
+    background-color: #F3E5F5;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._480-hover-color-purple-50:hover {
+    color: #F3E5F5;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._480-hover-bgc-purple-50:hover {
+    background-color: #F3E5F5;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._480-color-purple-100 {
+    color: #E1BEE7;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._480-bgc-purple-100 {
+    background-color: #E1BEE7;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._480-hover-color-purple-100:hover {
+    color: #E1BEE7;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._480-hover-bgc-purple-100:hover {
+    background-color: #E1BEE7;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._480-color-purple-200 {
+    color: #CE93D8;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._480-bgc-purple-200 {
+    background-color: #CE93D8;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._480-hover-color-purple-200:hover {
+    color: #CE93D8;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._480-hover-bgc-purple-200:hover {
+    background-color: #CE93D8;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._480-color-purple-300 {
+    color: #BA68C8;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._480-bgc-purple-300 {
+    background-color: #BA68C8;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._480-hover-color-purple-300:hover {
+    color: #BA68C8;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._480-hover-bgc-purple-300:hover {
+    background-color: #BA68C8;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._480-color-purple-400 {
+    color: #AB47BC;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._480-bgc-purple-400 {
+    background-color: #AB47BC;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._480-hover-color-purple-400:hover {
+    color: #AB47BC;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._480-hover-bgc-purple-400:hover {
+    background-color: #AB47BC;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._480-color-purple-500 {
+    color: #9C27B0;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._480-bgc-purple-500 {
+    background-color: #9C27B0;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._480-hover-color-purple-500:hover {
+    color: #9C27B0;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._480-hover-bgc-purple-500:hover {
+    background-color: #9C27B0;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._480-color-purple-600 {
+    color: #8E24AA;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._480-bgc-purple-600 {
+    background-color: #8E24AA;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._480-hover-color-purple-600:hover {
+    color: #8E24AA;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._480-hover-bgc-purple-600:hover {
+    background-color: #8E24AA;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._480-color-purple-700 {
+    color: #7B1FA2;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._480-bgc-purple-700 {
+    background-color: #7B1FA2;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._480-hover-color-purple-700:hover {
+    color: #7B1FA2;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._480-hover-bgc-purple-700:hover {
+    background-color: #7B1FA2;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._480-color-purple-800 {
+    color: #6A1B9A;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._480-bgc-purple-800 {
+    background-color: #6A1B9A;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._480-hover-color-purple-800:hover {
+    color: #6A1B9A;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._480-hover-bgc-purple-800:hover {
+    background-color: #6A1B9A;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._480-color-purple-900 {
+    color: #4A148C;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._480-bgc-purple-900 {
+    background-color: #4A148C;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._480-hover-color-purple-900:hover {
+    color: #4A148C;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._480-hover-bgc-purple-900:hover {
+    background-color: #4A148C;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._480-color-purple-A100 {
+    color: #EA80FC;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._480-bgc-purple-A100 {
+    background-color: #EA80FC;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._480-hover-color-purple-A100:hover {
+    color: #EA80FC;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._480-hover-bgc-purple-A100:hover {
+    background-color: #EA80FC;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._480-color-purple-A200 {
+    color: #E040FB;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._480-bgc-purple-A200 {
+    background-color: #E040FB;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._480-hover-color-purple-A200:hover {
+    color: #E040FB;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._480-hover-bgc-purple-A200:hover {
+    background-color: #E040FB;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._480-color-purple-A400 {
+    color: #D500F9;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._480-bgc-purple-A400 {
+    background-color: #D500F9;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._480-hover-color-purple-A400:hover {
+    color: #D500F9;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._480-hover-bgc-purple-A400:hover {
+    background-color: #D500F9;
+  }
+
+  /* line 169, ../scss/_mixins.scss */
+  ._480-color-purple-A700 {
+    color: #AA00FF;
+  }
+
+  /* line 170, ../scss/_mixins.scss */
+  ._480-bgc-purple-A700 {
+    background-color: #AA00FF;
+  }
+
+  /* line 171, ../scss/_mixins.scss */
+  ._480-hover-color-purple-A700:hover {
+    color: #AA00FF;
+  }
+
+  /* line 172, ../scss/_mixins.scss */
+  ._480-hover-bgc-purple-A700:hover {
+    background-color: #AA00FF;
+  }
+}
+@media screen and (min-width: 1201px) {
+  /* line 181, ../scss/_mixins.scss */
+  ._container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+/* line 6, ../scss/app.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 13, ../scss/app.scss */
+.font-robot {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 16, ../scss/app.scss */
+.font-playfair-display {
+  font-family: 'Playfair Display', serif;
+}
+
+/* line 19, ../scss/app.scss */
+.img-circle {
+  border-radius: 50%;
+}
+
+/* line 22, ../scss/app.scss */
+h2 {
+  font-size: 30px;
+}
+
+/* line 25, ../scss/app.scss */
+.bg-light-grey {
+  background-color: #ECEFF1;
+}

@@ -1,9 +1,27 @@
 @import "base";
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Roboto:400');
 
 @include button();
 @include grid();
-
-
+*{
+  box-sizing: border-box;
+}
 ._box {
   //border: 1px solid red;
+}
+
+.font-robot{
+  font-family: 'Roboto', sans-serif;
+}
+.font-playfair-display{
+  font-family: 'Playfair Display', serif;
+}
+.img-circle {
+  border-radius: 50%;
+}
+h2{
+  font-size: 30px;
+}
+.bg-light-grey{
+  background-color: #ECEFF1;
 }

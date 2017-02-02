@@ -19,7 +19,7 @@ $POST = new Post(get_post());
 </head>
 <body>
 
-<div id="container" class="_container">
+<div id="container">
 
     <header id="main-header">
         <?php drawMenu() ?>

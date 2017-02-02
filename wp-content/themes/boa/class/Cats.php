@@ -65,7 +65,7 @@ class Cats
      */
     public function getById($catId = null)
     {
-        return new Cat(get_the_category_by_ID($catId));
+        return new Cat(get_category($catId));
     }
 
     /**
