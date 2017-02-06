@@ -10,3 +10,46 @@ License URI:
 Tags:
 Text Domain:
 */
+
+*{
+    margin: auto;
+    left:0;
+    right: 0;
+    font-family: Arial;
+}
+
+.header{
+    width:100%;
+    background-color: #4A148C;
+    height: 100px;
+}
+
+.header ul{
+    margin-left:45px;
+}
+
+.header ul li {
+    list-style:none;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.header ul li a{
+    text-decoration: none;
+    margin: 15px;
+    line-height: 5em;
+    color:#FFF;
+
+}
+
+.footer{
+    width:100%;
+    background-color: #4A148C;
+    height: 100px;
+}
+
+.footer p{
+    line-height: 5em;
+    margin-left: 100px;
+    color: #FFF;
+}

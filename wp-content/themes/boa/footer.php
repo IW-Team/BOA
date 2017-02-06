@@ -2,8 +2,8 @@
 
 </main>
 
-<footer class="main-footer">
-
+<footer class="footer main-footer">
+    <p>Footer</p>
 </footer>
 
 </div>
