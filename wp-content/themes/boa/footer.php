@@ -3,12 +3,13 @@
 </main>
 
 <footer class="footer main-footer">
-    <p>Footer</p>
+    <p>BOA &copy; All rights reserved</p>
+    <?php wp_footer(); ?>
 </footer>
 
 </div>
 
-<?php wp_footer(); ?>
+
 
 </body>
 </html>
