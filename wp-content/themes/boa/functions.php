@@ -8,6 +8,7 @@ function main_menu()
 }
 
 function theme_styles() {
+    wp_enqueue_style('main_font', get_template_directory_uri().'/styles/font-awesome/css/font-awesome.min.css');
 
 	wp_enqueue_style('main_style', get_template_directory_uri().'/styles/css/app.css');
 

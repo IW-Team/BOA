@@ -8004,27 +8004,49 @@ sub {
   box-sizing: border-box;
 }
 
-/* line 13, ../scss/app.scss */
+/* line 10, ../scss/app.scss */
+.six-grid-border div:nth-child(2) {
+  border: solid #ebebeb 1px;
+  border-top: 0;
+}
+/* line 14, ../scss/app.scss */
+.six-grid-border div:nth-child(1), .six-grid-border div:nth-child(3) {
+  border-bottom: solid #ebebeb 1px;
+}
+/* line 17, ../scss/app.scss */
+.six-grid-border div:nth-child(5) {
+  border-left: solid #ebebeb 1px;
+  border-right: solid #ebebeb 1px;
+}
+
+/* line 22, ../scss/app.scss */
+.fa:before {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5, #00dfd0), color-stop(1, #49a5cc));
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+/* line 31, ../scss/app.scss */
 .font-robot {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 16, ../scss/app.scss */
+/* line 34, ../scss/app.scss */
 .font-playfair-display {
   font-family: 'Playfair Display', serif;
 }
 
-/* line 19, ../scss/app.scss */
+/* line 37, ../scss/app.scss */
 .img-circle {
   border-radius: 50%;
 }
 
-/* line 22, ../scss/app.scss */
+/* line 40, ../scss/app.scss */
 h2 {
   font-size: 30px;
 }
 
-/* line 25, ../scss/app.scss */
+/* line 43, ../scss/app.scss */
 .bg-light-grey {
   background-color: #ECEFF1;
 }

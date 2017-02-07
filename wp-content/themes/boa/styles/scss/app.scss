@@ -6,6 +6,24 @@
 *{
   box-sizing: border-box;
 }
+.six-grid-border{
+  div:nth-child(2){
+    border: solid #ebebeb 1px;
+    border-top: 0;
+  }
+  div:nth-child(1), div:nth-child(3){
+    border-bottom: solid #ebebeb 1px;
+  }
+  div:nth-child(5){
+    border-left: solid #ebebeb 1px;
+    border-right: solid #ebebeb 1px;
+  }
+}
+.fa:before {
+  background-image:  -webkit-gradient(linear, left top, right top, color-stop(.5, #00dfd0), color-stop(1, #49a5cc));
+  color: transparent;
+  -webkit-background-clip: text;
+}
 ._box {
   //border: 1px solid red;
 }
