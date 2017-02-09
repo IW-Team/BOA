@@ -15,11 +15,14 @@ $boaIntro = $post->getById(130);
 $boaSavoirFaire = $post->getById(132);
 $boaTournage = $post->getById(135);
 ?>
-<section class="_container _p-t-20 _p-b-20 _text-center _p-t-100 _p-b-100" style="background-image: url(<?php echo ($boaIntro->thumbnail()); ?>); max-width: none ">
-    <h2 class="font-playfair-display _m-b-20 f-c-white"><b>
-            <?php echo ($boaIntro->title()); ?></b></h2>
+
+<section class="_text-center pos-relative background_cover " style="background-image: url(<?php echo ($boaIntro->thumbnail()); ?>); max-width: none ">
+    <div class="pos-absolute center_element">
+        <h2 class="font-playfair-display _m-b-20 f-c-white"><b>
+                <?php echo ($boaIntro->title()); ?></b></h2>
         <hr class="hr-colored hr-small-center">
         <p class="font-robot f-c-white _m-t-20 _p-l-40 _p-r-40"><?php echo ($boaIntro->content()) ?></p>
+    </div>
 
 </section>
 <section class="_container _container-flex _p-t-30 _p-b-30 _text-center aligncenter _p-t-20 _p-b-20">
@@ -35,13 +38,16 @@ $boaTournage = $post->getById(135);
     </div>
 
 </section>
-<section class="_container _p-t-20 _p-b-20 _text-center _p-t-150 _p-b-150" style="background-image: url(<?php echo ($boaTournage->thumbnail()); ?>); max-width: none ">
-    <span class="border-circle-white _p-l-20 _p-t-10 _p-b-10 _p-r-10 f-c-white _f-s-50">
-    &#9658;
-    </span>
-    <p class="font-robot f-c-white _m-t-20 _p-l-40 _p-r-40 _p-t-20"><?php echo ($boaTournage->title()) ?></p>
 
+<section class=" _text-center pos-relative background_cover" style="background-image: url(<?php echo ($boaTournage->thumbnail());?>);">
+    <div class="pos-absolute center_element">
+        <span class="border-circle-white _p-l-20 _p-t-10 _p-b-10 _p-r-10 f-c-white _f-s-50">
+            &#9658;
+        </span>
+        <p class="font-robot f-c-white _m-t-20 _p-l-40 _p-r-40 _p-t-20"><?php echo ($boaTournage->title()) ?></p>
+    </div>
 </section>
+
 <section class="_container _p-t-30 _p-b-30">
     <h2 class="font-playfair-display _m-b-20 _text-center "><b><?php echo ($catPartners->name()) ?></b></h2>
     <div class="_container-flex six-grid-border">
