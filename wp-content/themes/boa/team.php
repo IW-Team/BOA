@@ -13,7 +13,7 @@ $catTeam = $cats->getById(3);
 $catPartner = $cats->getById(4);
 
 ?>
-<div class="bg-light-grey _p-t-20 _p-b-20">
+<section class="bg-light-grey _p-t-20 _p-b-20">
 <h2 class="font-playfair-display _text-center "><?php echo ($catTeam->name()) ?></h2>
 
 <div class="_container-flex">
@@ -25,8 +25,8 @@ $catPartner = $cats->getById(4);
             </div>
         <?php }?>
 </div>
-</div>
-<div class="_container _p-t-20 _p-b-20">
+</section>
+<section class="_container _p-t-20 _p-b-20">
     <h2 class="font-playfair-display _text-center "><?php echo ($catPartner->name()) ?></h2>
 
     <div class="_container-flex">
@@ -38,7 +38,7 @@ $catPartner = $cats->getById(4);
             </div>
         <?php }?>
     </div>
-</div>
+</section>
 <?php
 get_footer();
 ?>

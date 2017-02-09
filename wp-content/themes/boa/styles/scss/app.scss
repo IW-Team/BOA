@@ -6,21 +6,75 @@
 *{
   box-sizing: border-box;
 }
+.border-circle-white{
+  border-radius: 100%;
+  border: solid $white 2px;
+}
+.f-c-white{
+  color: $white;
+}
+.btn-orange{
+  background-color: $orange;
+}
+._button._button-3d {
+  border-radius: 5px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  border-bottom: 5px solid $orange-darker;
+  text-shadow: 0px -2px $orange-darker;
+}
+._button {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border: none;
+  padding: 0.85em 1em;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  outline: 0;
+  text-decoration: none;
+  background-color: $orange;
+  color: $white;
+}
+._button:hover {
+  color: #ffffff;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  background-color: $orange;
+}
+._button-3d {
+  color: #FFF;
+  width: 150px;
+  display: block;
+}
+.hr-colored{
+  display: block ;
+  height: 1px ;
+  border: 0 ;
+  border-top: 3px solid $orange ;
+  margin: 0 auto;
+  padding: 0 ;
+}
+.hr-small-center{
+  width: 60px;
+}
 .six-grid-border{
   div:nth-child(2){
-    border: solid #ebebeb 1px;
+    border: solid $light-grey 1px;
     border-top: 0;
   }
   div:nth-child(1), div:nth-child(3){
-    border-bottom: solid #ebebeb 1px;
+    border-bottom: solid $light-grey 1px;
   }
   div:nth-child(5){
-    border-left: solid #ebebeb 1px;
-    border-right: solid #ebebeb 1px;
+    border-left: solid $light-grey 1px;
+    border-right: solid $light-grey 1px;
   }
 }
 .fa:before {
-  background-image:  -webkit-gradient(linear, left top, right top, color-stop(.5, #00dfd0), color-stop(1, #49a5cc));
+  background-image:  -webkit-gradient(linear, left top, right top, color-stop(.5, $blue-gradien-start), color-stop(1, $blue-gradien-end));
   color: transparent;
   -webkit-background-clip: text;
 }
@@ -41,5 +95,5 @@ h2{
   font-size: 30px;
 }
 .bg-light-grey{
-  background-color: #ECEFF1;
+  background-color: $light-grey;
 }

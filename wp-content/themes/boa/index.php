@@ -10,12 +10,40 @@
 get_header();
 $cats = new Cats();
 $catPartners = $cats->getById(9);
+$post = new Posts();
+$boaIntro = $post->getById(130);
+$boaSavoirFaire = $post->getById(132);
+$boaTournage = $post->getById(135);
 ?>
+<section class="_container _p-t-20 _p-b-20 _text-center _p-t-100 _p-b-100" style="background-image: url(<?php echo ($boaIntro->thumbnail()); ?>); max-width: none ">
+    <h2 class="font-playfair-display _m-b-20 f-c-white"><b>
+            <?php echo ($boaIntro->title()); ?></b></h2>
+        <hr class="hr-colored hr-small-center">
+        <p class="font-robot f-c-white _m-t-20 _p-l-40 _p-r-40"><?php echo ($boaIntro->content()) ?></p>
 
-    <h1>Index</h1>
-<div class="_container _p-t-20 _p-b-20">
+</section>
+<section class="_container _container-flex _p-t-30 _p-b-30 _text-center aligncenter _p-t-20 _p-b-20">
+    <div class="_box-50">
+        <img src="<?php echo ($boaSavoirFaire->thumbnail()); ?>" >
+    </div>
+    <div class="_box-50">
+        <h2 class="font-playfair-display _m-b-20">
+            <b><?php echo ($boaSavoirFaire->title()); ?></b>
+        </h2>
+        <p class="font-robot _p-l-20 _p-r-20"><?php echo ($boaSavoirFaire->content()); ?></p>
+        <a class="font-robot _m-l-30 _m-t-20 _button _button-3d ">NOS PROJETS</a>
+    </div>
+
+</section>
+<section class="_container _p-t-20 _p-b-20 _text-center _p-t-150 _p-b-150" style="background-image: url(<?php echo ($boaTournage->thumbnail()); ?>); max-width: none ">
+    <span class="border-circle-white _p-l-20 _p-t-10 _p-b-10 _p-r-10 f-c-white _f-s-50">
+    &#9658;
+    </span>
+    <p class="font-robot f-c-white _m-t-20 _p-l-40 _p-r-40 _p-t-20"><?php echo ($boaTournage->title()) ?></p>
+
+</section>
+<section class="_container _p-t-30 _p-b-30">
     <h2 class="font-playfair-display _m-b-20 _text-center "><b><?php echo ($catPartners->name()) ?></b></h2>
-
     <div class="_container-flex six-grid-border">
         <?php foreach ($catPartners->posts() as $post){ ?>
             <div class="_box-33 _768-box-33 _480-box-100 _text-center _p-r-15 _p-l-15 _p-t-15 _p-b-15 ">
@@ -40,12 +68,12 @@ $catPartners = $cats->getById(9);
                         break;
                 }
                 ?>
-                <p class="font-playfair-display _f-s-21 _m-t-10 _m-b-10"><?php echo $post->title()?></p>
-                <p class="font-robot"><?php echo $post->content() ?></p>
+                <p class="font-playfair-display _f-s-21 _m-t-10 _m-b-10"><b><?php echo $post->title()?></b></p>
+                <p class="font-robot _p-b-20"><?php echo $post->content() ?></p>
             </div>
         <?php }?>
     </div>
-</div>
+</section>
 
 <?php
 get_footer();

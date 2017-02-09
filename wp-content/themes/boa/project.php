@@ -16,7 +16,7 @@ $catPhoto = $cats->getById(8);
 
 ?>
 
-<div class="bg-light-grey _p-t-20 _p-b-20">
+<section class="bg-light-grey _p-t-20 _p-b-20">
     <h2 class="font-playfair-display _text-center "><?php echo ($catVideo->name()) ?></h2>
 
     <div class="_container-flex">
@@ -28,8 +28,8 @@ $catPhoto = $cats->getById(8);
             </div>
         <?php }?>
     </div>
-</div>
-<div class="_container _p-t-20 _p-b-20">
+</section>
+<section class="_container _p-t-20 _p-b-20">
     <h2 class="font-playfair-display _text-center "><?php echo ($catFilm->name()) ?></h2>
 
     <div class="_container-flex">
@@ -41,7 +41,7 @@ $catPhoto = $cats->getById(8);
             </div>
         <?php }?>
     </div>
-</div>
+</section>
 <div class="bg-light-grey _p-t-20 _p-b-20">
     <h2 class="font-playfair-display _text-center "><?php echo ($catClip->name()) ?></h2>
 
