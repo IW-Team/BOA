@@ -53,3 +53,14 @@ Text Domain:
     margin-left: 100px;
     color: #FFF;
 }
+
+.contactForm{
+   margin-left: 38%;
+}
+
+._input{
+    width: 37%;
+    height: 15px;
+    border-radius: 3px;
+    text-align: center;
+}
