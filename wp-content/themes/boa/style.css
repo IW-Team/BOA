@@ -20,12 +20,13 @@ Text Domain:
 
 .header{
     width:100%;
-    background-color: #6f5499;
+    background-color:#4D0577;
     height: 75px;
 }
 
 .header ul{
-    margin-left:45px;
+    margin-right:150px;
+    float:right;
 }
 
 .header ul li {
@@ -42,25 +43,68 @@ Text Domain:
 
 }
 
+.header ul li a:hover{
+    color:#F49224;
+    transition: 0.5s;
+}
+
 .footer{
     width:100%;
-    background-color: #6f5499;
+    background-color:#4D0577;
     height: 75px;
 }
 
 .footer p{
-    line-height: 4em;
-    margin-left: 100px;
+    line-height: 4.5em;
     color: #FFF;
+    float: right;
+    margin-right:150px;
 }
 
 .contactForm{
-   margin-left: 38%;
+    padding: 7%;
+}
+
+.contactForm p{
+    margin-left: 34%;
+    text-align: left;
+    padding: 5px;
 }
 
 ._input{
-    width: 37%;
-    height: 15px;
-    border-radius: 3px;
-    text-align: center;
+    display: block;
+    width: 30%;
+    height: 20px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+._input:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+._button{
+    height:35px;
+    display: block;
+    width: 30%;
+    color: #FFF;
+    background-color: #4D0577;
+    border: none;
+}
+
+._button:hover{
+    transition: 0.5s;
+    background-color: #4A148C;
 }

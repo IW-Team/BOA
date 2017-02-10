@@ -21,8 +21,8 @@ get_header();
     <p>Email :</p>
     <input type="text" name="email" class="_input">
     <p>Message :</p>
-    <textarea rows="4" cols="50" name="content"></textarea><br>
-    <input class="_input" type="submit" value="Envoyer">
+    <textarea class="_input" rows="5" cols="50" name="content"></textarea><br>
+    <input class="_button" type="submit" value="Envoyer">
 </form>
 
 
