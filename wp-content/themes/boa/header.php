@@ -10,6 +10,7 @@ $POST = new Post(get_post());
     <meta charset="UTF-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta name="description" content="">
+    <link href="wp-content/themes/boa/style.css" rel="stylesheet">
     <title></title>
 
     <?php wp_head(); ?>
@@ -21,8 +22,8 @@ $POST = new Post(get_post());
 
 <div id="container">
 
-    <header id="main-header">
-        <?php drawMenu() ?>
+    <header class="header" id="main-header">
+        <?php drawMenu(); ?>
     </header>
 
     <main id="main-content">
