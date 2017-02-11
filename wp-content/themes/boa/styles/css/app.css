@@ -9499,18 +9499,32 @@ sub {
     margin: auto;
   }
 }
-/* line 6, ../scss/app.scss */
+@font-face {
+  font-family: 'Seagram';
+  src: url("../font/seagram_tfb/Seagramtfb.ttf");
+}
+/* line 10, ../scss/app.scss */
 * {
+  margin: auto;
+  left: 0;
+  right: 0;
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
 
-/* line 9, ../scss/app.scss */
+/* line 18, ../scss/app.scss */
+.logo-font {
+  font-family: 'seagram', sans-serif;
+  font-size: 30px;
+}
+
+/* line 22, ../scss/app.scss */
 .border-circle-white {
   border-radius: 100%;
   border: solid #ffffff 2px;
 }
 
-/* line 13, ../scss/app.scss */
+/* line 26, ../scss/app.scss */
 .center_element {
   margin: auto;
   top: 0;
@@ -9520,17 +9534,17 @@ sub {
   height: 250px;
 }
 
-/* line 21, ../scss/app.scss */
+/* line 34, ../scss/app.scss */
 .pos-relative {
   position: relative;
 }
 
-/* line 24, ../scss/app.scss */
+/* line 37, ../scss/app.scss */
 .pos-absolute {
   position: absolute;
 }
 
-/* line 28, ../scss/app.scss */
+/* line 41, ../scss/app.scss */
 .background_cover {
   width: 100%;
   height: 500px;
@@ -9538,18 +9552,18 @@ sub {
   background-position: center center;
 }
 
-/* line 34, ../scss/app.scss */
+/* line 47, ../scss/app.scss */
 .f-c-white {
   color: #ffffff;
 }
 
-/* line 37, ../scss/app.scss */
+/* line 50, ../scss/app.scss */
 .btn-orange {
   background-color: #ff9901;
 }
 
-/* line 40, ../scss/app.scss */
-._button._button-3d {
+/* line 53, ../scss/app.scss */
+._button-project._button-3d-project {
   border-radius: 5px;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
@@ -9557,8 +9571,8 @@ sub {
   text-shadow: 0px -2px #dd952a;
 }
 
-/* line 47, ../scss/app.scss */
-._button {
+/* line 60, ../scss/app.scss */
+._button-project {
   display: inline-block;
   text-align: center;
   cursor: pointer;
@@ -9574,22 +9588,21 @@ sub {
   color: #ffffff;
 }
 
-/* line 62, ../scss/app.scss */
-._button:hover {
+/* line 75, ../scss/app.scss */
+._button-project:hover {
   color: #ffffff;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
   background-color: #ff9901;
 }
 
-/* line 68, ../scss/app.scss */
-._button-3d {
+/* line 81, ../scss/app.scss */
+._button-3d-project {
   color: #FFF;
   width: 150px;
-  display: block;
 }
 
-/* line 73, ../scss/app.scss */
+/* line 85, ../scss/app.scss */
 .hr-colored {
   display: block;
   height: 1px;
@@ -9599,54 +9612,194 @@ sub {
   padding: 0;
 }
 
-/* line 81, ../scss/app.scss */
+/* line 93, ../scss/app.scss */
 .hr-small-center {
   width: 60px;
 }
 
-/* line 85, ../scss/app.scss */
+/* line 97, ../scss/app.scss */
 .six-grid-border div:nth-child(2) {
   border: solid #ebebeb 1px;
   border-top: 0;
 }
-/* line 89, ../scss/app.scss */
+/* line 101, ../scss/app.scss */
 .six-grid-border div:nth-child(1), .six-grid-border div:nth-child(3) {
   border-bottom: solid #ebebeb 1px;
 }
-/* line 92, ../scss/app.scss */
+/* line 104, ../scss/app.scss */
 .six-grid-border div:nth-child(5) {
   border-left: solid #ebebeb 1px;
   border-right: solid #ebebeb 1px;
 }
 
-/* line 97, ../scss/app.scss */
+/* line 109, ../scss/app.scss */
 .fa:before {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5, #00dfd0), color-stop(1, #49a5cc));
   color: transparent;
   -webkit-background-clip: text;
 }
 
-/* line 106, ../scss/app.scss */
+/* line 118, ../scss/app.scss */
 .font-robot {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 109, ../scss/app.scss */
+/* line 121, ../scss/app.scss */
 .font-playfair-display {
   font-family: 'Playfair Display', serif;
 }
 
-/* line 112, ../scss/app.scss */
+/* line 124, ../scss/app.scss */
 .img-circle {
   border-radius: 50%;
 }
 
-/* line 115, ../scss/app.scss */
+/* line 127, ../scss/app.scss */
 h2 {
   font-size: 30px;
 }
 
-/* line 118, ../scss/app.scss */
+/* line 130, ../scss/app.scss */
 .bg-light-grey {
   background-color: #ebebeb;
+}
+
+/* line 133, ../scss/app.scss */
+.header {
+  background-color: #24164c;
+}
+
+/* line 137, ../scss/app.scss */
+.header ul {
+  list-style: none;
+}
+/* line 139, ../scss/app.scss */
+.header ul a {
+  text-decoration: none;
+  color: #FFF;
+  margin: 0 15px;
+}
+/* line 143, ../scss/app.scss */
+.header ul a:hover {
+  color: #F49224;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 152, ../scss/app.scss */
+.footer {
+  width: 100%;
+  background-color: #24164c;
+  height: 75px;
+}
+
+/* line 158, ../scss/app.scss */
+.footer p {
+  line-height: 4.5em;
+  color: #FFF;
+  float: right;
+  margin-right: 150px;
+}
+
+/* line 165, ../scss/app.scss */
+.contactForm {
+  padding: 7%;
+}
+
+/* line 169, ../scss/app.scss */
+.contactForm p {
+  margin-left: 34%;
+  text-align: left;
+  padding: 5px;
+}
+
+/* line 175, ../scss/app.scss */
+._input {
+  display: block;
+  width: 30%;
+  height: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+/* line 192, ../scss/app.scss */
+._input:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/* line 199, ../scss/app.scss */
+._content {
+  display: block;
+  width: 30%;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+/* line 214, ../scss/app.scss */
+._content:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/* line 221, ../scss/app.scss */
+._button {
+  height: 35px;
+  display: block;
+  width: 30%;
+  color: #FFF;
+  background-color: #4D0577;
+  border: none;
+}
+
+/* line 230, ../scss/app.scss */
+._button:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #4A148C;
+}
+
+/* line 234, ../scss/app.scss */
+.show {
+  display: block;
+}
+
+/* line 239, ../scss/app.scss */
+.header .mobile-menu {
+  background-color: #311B92;
+  right: 15px;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+}
+/* line 245, ../scss/app.scss */
+.header .mobile-menu a {
+  padding: 10px;
+}
+/* line 248, ../scss/app.scss */
+.header .mobile-menu li, .header .mobile-menu a {
+  margin: 0;
+  display: block;
+  width: 100%;
+}
+/* line 252, ../scss/app.scss */
+.header .mobile-menu li:hover, .header .mobile-menu a:hover {
+  background-color: #4D0577;
 }
