@@ -26,15 +26,18 @@ $boaTournage = $post->getById(135);
 
 </section>
 <section class="_container _container-flex _p-t-30 _p-b-30 _text-center aligncenter _p-t-20 _p-b-20">
-    <div class="_box-50">
+    <div class="_box-50 _480-box-100">
         <img src="<?php echo ($boaSavoirFaire->thumbnail()); ?>" >
     </div>
-    <div class="_box-50">
+    <div class="_box-50 _480-box-100  ">
         <h2 class="font-playfair-display _m-b-20">
             <b><?php echo ($boaSavoirFaire->title()); ?></b>
         </h2>
         <p class="font-robot _p-l-20 _p-r-20"><?php echo ($boaSavoirFaire->content()); ?></p>
-        <a class="font-robot _m-l-30 _m-t-20 _button _button-3d ">NOS PROJETS</a>
+        <div class="_text-left _480-text-center">
+            <a class="font-robot _m-l-30 _m-t-20 _button-project _button-3d-project inline-block">NOS PROJETS</a>
+
+        </div>
     </div>
 
 </section>
