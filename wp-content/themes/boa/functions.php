@@ -41,6 +41,7 @@ function drawMenu()
         'walker' => ''
     ));
 }
+
 function drawBurger(){
     wp_nav_menu(array(
         'theme_location' => 'main_menu',
