@@ -62,8 +62,92 @@ function drawBurger(){
         'walker' => ''
     ));
 }
+/* Zones de widgets */
+function my_sidebars() {
+    register_sidebar(array(
+        'name' 		  => 'Barre latérale',
+        'id'    	  => 'sidebar-1',
+        'description' => 'Cela apparait sur toutes les pages, pour l\'instant...'
+    ));
+}
+
+add_action('widgets_init', 'my_sidebars');
+
+//Créer son widget
+
+class Link_Widget extends WP_Widget {
+
+    function __construct() {
+
+        parent::__construct(
+            'my-link',  // Base ID
+            'Reseau-social'   // Name
+        );
+
+        add_action( 'widgets_init', function() {
+            register_widget( 'Link_Widget' );
+        });
+
+    }
+
+    public $args = array(
+        'before_title'  => '<h4 class="widgettitle">',
+        'after_title'   => '</h4>',
+        'before_widget' => '<div class="widget-wrap">',
+        'after_widget'  => '</div></div>'
+    );
+
+    public function widget( $args, $instance ) {
+        switch ($instance["title"]){
+            case "facebook":
+                echo '<a href="'.$instance['url'].'"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>';
+                break;
+            case "instagram":
+                echo  '<a href="'.$instance['url'].'"><i class="fa fa-instagram" aria-hidden="true"></i></a>';
+                break;
+        }
+    }
+
+    public function form( $instance ) {
+        //Ce qui s'affiche en back
+
+        $title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( '', 'text_domain' );
+        $url = ! empty( $instance['url'] ) ? $instance['url'] : esc_html__( '', 'text_domain' );
+
+        echo '
+        <p>
+        	<label for="'.$this->get_field_id('title').'">
+        	Choix du réseau social : </label>
+        	<select name="'.$this->get_field_name('title').'"  id="'.$this->get_field_id('title').'" >
+              <option  value="facebook">Facebook</option> 
+              <option  value="instagram">Instagram</option>
+            </select>
+        </p>
+        <p>
+        	<label for="'.$this->get_field_id('url').'">
+        	Cible (URL) du lien : </label>
+        	<input type="text" id="'.$this->get_field_id('url').'" name="'.$this->get_field_name('url').'" value="'.$url.'">
+        </p>
+        ';
 
 
+
+    }
+
+    public function update( $new_instance, $old_instance ) {
+
+        // sauvegarde en bdd
+
+        $instance = array();
+
+        $instance['title'] = ( !empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+        $instance['url'] = ( !empty( $new_instance['url'] ) ) ? $new_instance['url'] : '';
+
+        return $instance;
+    }
+
+}
+$my_widget = new Link_Widget();
 
 
 

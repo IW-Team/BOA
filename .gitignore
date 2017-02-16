@@ -3,3 +3,4 @@
 /cgi-bin/
 /wp-config.php
 /wp-content/themes/boa/styles/node_modules/
+/wp-content/themes/boa/styles/.sass-cache/

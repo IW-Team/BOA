@@ -44,6 +44,9 @@
   background-size: cover;
   background-position: center center;
 }
+.widget_my-link{
+  list-style-type: none;
+}
 .f-c-white{
   color: $white;
 }
@@ -158,14 +161,8 @@ h2{
 .footer{
   width:100%;
   background-color:#24164c;
-  height: 75px;
-}
-
-.footer p{
-  line-height: 4.5em;
-  color: #FFF;
-  float: right;
-  margin-right:150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .contactForm{
