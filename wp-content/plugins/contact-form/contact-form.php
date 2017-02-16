@@ -28,15 +28,15 @@ class Contact_form
     /**
      *
      */
-    public static function form() {
-        echo '<form class="contactForm" action="' . $_SERVER['REQUEST_URI'] . '" method="post" >';
+    public function form() {
+        echo '<form class="contactForm" action="' . esc_url($_SERVER['REQUEST_URI']) . '" method="post" >';
         echo '<p>Nom* :</p>';
-        echo '<input type="text" name="name" class="_input" value="' . ( isset( $_POST["name"] ) ? esc_attr( $_POST["name"] ) : '' ) . '" size="40" />';
+        echo '<input type="text" name="nameForm" class="_input" value="' . ( isset( $_POST["nameForm"] ) ? esc_attr( $_POST["nameForm"] ) : '' ) . '" size="40" />';
         echo '<p>Email* :</p>';
-        echo '<input type="text" name="email" class="_input" value="' . ( isset( $_POST["email"] ) ? esc_attr( $_POST["email"] ) : '' ) . '" size="40" />';
+        echo '<input type="text" name="emailForm" class="_input" value="' . ( isset( $_POST["emailForm"] ) ? esc_attr( $_POST["emailForm"] ) : '' ) . '" size="40" />';
         echo '<p>Message* :</p>';
-        echo '<textarea class="_content" rows="5" cols="50" name="message">' . ( isset( $_POST["message"] ) ? esc_attr( $_POST["message"] ) : '' ) . '</textarea><br/>';
-        echo '<input class="_button" type="submit" name="submit" value="Envoyer">';
+        echo '<textarea class="_content" rows="5" cols="50" name="messageForm">' . ( isset( $_POST["messageForm"] ) ? esc_attr( $_POST["messageForm"] ) : '' ) . '</textarea><br/>';
+        echo '<input class="_button" type="submit" name="submitForm" value="Envoyer">';
         echo '</form>';
     }
 
@@ -52,11 +52,14 @@ class Contact_form
             array_push( $this->form_errors, 'Les champs marqué d\'une * doivent être remplis' );
         }
 
-        if ( strlen(trim($name)) < 4 ) {
+        if ( strlen(trim($name)) < 2 ) {
             array_push( $this->form_errors, 'Le nom doit être supérieur à 2 caractères' );
         }
+        if ( strlen(trim($message)) < 4 ) {
+            array_push( $this->form_errors, 'Le message doit être supérieur à 4 caractères' );
+        }
 
-        if ( filter_var(trim($email), FILTER_VALIDATE_EMAIL) ) {
+        if ( !filter_var(trim($email), FILTER_VALIDATE_EMAIL) ) {
             array_push( $this->form_errors, 'Format d\'email invalid ');
         }
     }
@@ -77,44 +80,37 @@ class Contact_form
             $message = esc_textarea($message);
 
             $to = get_option('admin_email');
-
-            $headers = 'From:'. $name.' <'.$email.'>';
+            $headers = "From: ". $name." <".$email."> " . "\r\n";
 
             if ( wp_mail( $to, 'Boa formulaire de contact', $message, $headers ) ) {
-                var_dump($_REQUEST);
-                die();
-                echo '<div style="background: #F7F7F7; color:#fff; padding:2px;margin:2px">';
+                echo '<div class="_text-center f-c-green _p-20">';
                 echo '<p>Merci de nous avoir contacter</p>';
                 echo '</div>';
             } else {
                 echo 'Une erreur est survenue lors de l\'envoi du formulaire';
             }
-            var_dump($this);
-            die();
+
         }
-        var_dump("toto");
-        die();
     }
 
     /**
      *
      */
     public function process_functions() {
-        if ( isset($_POST['submit']) ) {
-
-            $this->validate_form($_POST['name'], $_POST['email'], $_POST['message']);
+        $this->form();
+        if ( isset($_POST['submitForm']) ) {
+            $this->validate_form($_POST['nameForm'], $_POST['emailForm'], $_POST['messageForm']);
             // display form error if it exist
-            if (is_array($this->form_errors)) {
+            if (count($this->form_errors) >= 1) {
                 foreach ($this->form_errors as $error) {
-                    echo '<div>';
+                    echo '<div class="_text-center f-c-red _p-20">';
                     echo $error . '<br/>';
                     echo '</div>';
                 }
             }else{
-                $this->send_email( $_POST['name'], $_POST['email'], $_POST['message'] );
+                $this->send_email( $_POST['nameForm'], $_POST['emailForm'], $_POST['messageForm'] );
             }
         }
-        self::form();
     }
     public function shortcode() {
         ob_start();

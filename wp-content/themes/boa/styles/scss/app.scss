@@ -47,6 +47,12 @@
 .f-c-white{
   color: $white;
 }
+.f-c-red{
+  color: $red;
+}
+.f-c-green{
+  color: $green;
+}
 .btn-orange{
   background-color: $orange;
 }
@@ -163,18 +169,18 @@ h2{
 }
 
 .contactForm{
-  padding: 7%;
+  padding: 20px;
 }
 
 .contactForm p{
-  margin-left: 34%;
+  margin-left: 25%;
   text-align: left;
   padding: 5px;
 }
 
 ._input{
   display: block;
-  width: 30%;
+  width: 50%;
   height: 20px;
   padding: 6px 12px;
   font-size: 14px;
@@ -198,7 +204,7 @@ h2{
 
 ._content{
   display: block;
-  width: 30%;
+  width: 50%;
   font-size: 14px;
   line-height: 1.42857143;
   color: #555;

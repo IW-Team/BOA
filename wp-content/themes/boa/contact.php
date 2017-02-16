@@ -9,8 +9,7 @@
 
 get_header();
 ?>
-
-<h1>Contact</h1>
+<h2 class="font-playfair-display _text-center _p-t-20 "><b>Contact</b></h2>
 
 <?php echo do_shortcode('[contact_form]');?>
 
