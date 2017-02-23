@@ -5,7 +5,7 @@
         <p class="f-c-white font-robot">Nous suivre :</p>
         <?php dynamic_sidebar('sidebar-1'); ?>
     </div>
-    <div class=" _box-50 _pull-right _480-box-100 _text-center">
+    <div class=" _pull-right _480-box-100 _text-center">
         <p class="f-c-white font-robot _p-t-20">BOA &copy; All rights reserved</p>
     </div>
 

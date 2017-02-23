@@ -74,7 +74,6 @@ function my_sidebars() {
 add_action('widgets_init', 'my_sidebars');
 
 //Créer son widget
-
 class Link_Widget extends WP_Widget {
 
     function __construct() {
@@ -100,7 +99,7 @@ class Link_Widget extends WP_Widget {
     public function widget( $args, $instance ) {
         switch ($instance["title"]){
             case "facebook":
-                echo '<a href="'.$instance['url'].'"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>';
+                echo '<a href="'.$instance['url'].'"><i class="fa fa-facebook-square" aria-hidden="true"></i><a/>';
                 break;
             case "instagram":
                 echo  '<a href="'.$instance['url'].'"><i class="fa fa-instagram" aria-hidden="true"></i></a>';
@@ -148,6 +147,7 @@ class Link_Widget extends WP_Widget {
 
 }
 $my_widget = new Link_Widget();
+
 
 
 
