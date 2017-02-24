@@ -140,6 +140,18 @@ class Link_Widget extends WP_Widget {
 
 }
 $my_widget = new Link_Widget();
-
+add_action("init","my_custom_init");
+function my_custom_init()
+{
+    register_post_type("equipe", array(
+        "label" => _("Equipe"),
+        "singulat_label" => _("Equipe"),
+        "public" => true,
+        "show_ui" => true,
+        "capability_type" => "post",
+        "hierarchical" => false,
+        "supports" => array("title", "excerpt" , "thumbnail")
+    ));
+}
 
 ?>

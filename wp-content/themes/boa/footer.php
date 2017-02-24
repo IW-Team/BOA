@@ -8,7 +8,6 @@
     <div class=" _pull-right _480-box-100 _text-center">
         <p class="f-c-white font-robot _p-t-20">BOA &copy; All rights reserved</p>
     </div>
-
 </footer>
 
 </div>

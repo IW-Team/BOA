@@ -13,9 +13,7 @@ $catVideo = $cats->getById(5);
 $catFilm = $cats->getById(6);
 $catClip = $cats->getById(7);
 $catPhoto = $cats->getById(8);
-
 ?>
-
 <section class="bg-light-grey _p-t-20 _p-b-20">
     <h2 class="font-playfair-display _text-center "><?php echo ($catVideo->name()) ?></h2>
 
