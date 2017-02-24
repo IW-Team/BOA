@@ -98,20 +98,16 @@ class Link_Widget extends WP_Widget {
 
     public function widget( $args, $instance ) {
         //@Todo : Refacto
-        switch ($instance["title"]){
-            case "facebook":
-                echo '<a href="'.$instance['url'].'"><i class="fa fa-facebook-square" aria-hidden="true"></i><a/>';
-                break;
-            case "instagram":
-                echo  '<a href="'.$instance['url'].'"><i class="fa fa-instagram" aria-hidden="true"></i></a>';
-                break;
-        }
+        $id = array(
+            "facebook" => "fa fa-facebook-square",
+            "instagram" => "fa fa-instagram",
+        );
+
+        echo '<a href="'.$instance['url'].'"><i class="'.$id[$instance["title"]].'" aria-hidden="true"></i><a/>';
     }
 
     public function form( $instance ) {
         //Ce qui s'affiche en back
-
-        $title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( '', 'text_domain' );
         $url = ! empty( $instance['url'] ) ? $instance['url'] : esc_html__( '', 'text_domain' );
 
         echo '
@@ -129,14 +125,10 @@ class Link_Widget extends WP_Widget {
         	<input type="text" id="'.$this->get_field_id('url').'" name="'.$this->get_field_name('url').'" value="'.$url.'">
         </p>
         ';
-
-
-
     }
 
     public function update( $new_instance, $old_instance ) {
 
-        // sauvegarde en bdd
 
         $instance = array();
 

@@ -58,33 +58,17 @@ $boaTournage = $post->getById(135);
         <?php foreach ($catPartners->posts() as $post){
             $ids = array(
                     "128" => "fa fa-desktop fa-4x gradien-partner",
+                    "126" => "fa fa-paint-brush fa-4x gradient-partner",
+                    "124" => "fa fa-mobile fa-4x",
+                    "122" => "fa fa-pie-chart fa-4x",
+                    "120" => "fa fa-gamepad fa-4x",
+                    "109" => "fa fa-heart-o fa-4x",
 
             );
             ?>
             <div class="_box-33 _768-box-33 _480-box-100 _text-center _p-r-15 _p-l-15 _p-t-15 _p-b-15 ">
                 <?php
                 echo "<i class='".$ids[$post->id()]."' aria-hidden='true'></i>";
-                /*switch ($post->id()){
-
-                    case 128:
-                        echo "<i class=\"fa fa-desktop fa-4x gradien-partner\" aria-hidden=\"true\"></i>";
-                        break;
-                    case 126:
-                        echo "<i class=\"fa fa-paint-brush fa-4x gradient-partner\" aria-hidden=\"true\"></i>";
-                        break;
-                    case 124:
-                        echo "<i class=\"fa fa-mobile fa-4x\" aria-hidden=\"true\"></i>";
-                        break;
-                    case 122:
-                        echo "<i class=\"fa fa-pie-chart fa-4x\" aria-hidden=\"true\"></i>";
-                        break;
-                    case 120:
-                        echo "<i class=\"fa fa-gamepad fa-4x\" aria-hidden=\"true\"></i>";
-                        break;
-                    case 109:
-                        echo "<i class=\"fa fa-heart-o fa-4x\" aria-hidden=\"true\"></i>";
-                        break;
-                }*/
                 ?>
                 <p class="font-playfair-display _f-s-21 _m-t-10 _m-b-10"><b><?php echo $post->title()?></b></p>
                 <p class="font-robot _p-b-20"><?php echo $post->content() ?></p>
