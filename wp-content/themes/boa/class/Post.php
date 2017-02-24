@@ -246,5 +246,12 @@ class Post{
         return get_permalink($this->post->ID);
     }
 
+    /**
+     * @return string
+     */
+    public function getExcerpt(){
+        return $this->post->post_excerpt;
+    }
+
 
 }

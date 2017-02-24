@@ -24,7 +24,7 @@ $equipe = query_posts('post_type=equipe');
             <div class="_box-20 _768-box-50 _480-box-100 _text-center _p-r-15 _p-l-15">
                 <img src="<?php echo $post->image(300,300);?>" class="img-circle _m-t-15 _m-b-15" width="50%"/>
                 <p class="font-playfair-display _f-s-21 _m-t-10 _m-b-10"><?php echo $post->title()?></p>
-                <p class="font-robot"><?php echo $post->content() ?></p>
+                <p class="font-robot"><?php echo $post->getExcerpt(); ?></p>
             </div>
         <?php }?>
 </div>
