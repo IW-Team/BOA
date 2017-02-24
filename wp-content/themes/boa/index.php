@@ -54,9 +54,18 @@ $boaTournage = $post->getById(135);
 <section class="_container _p-t-30 _p-b-30">
     <h2 class="font-playfair-display _m-b-20 _text-center "><b><?php echo ($catPartners->name()) ?></b></h2>
     <div class="_container-flex six-grid-border">
-        <?php foreach ($catPartners->posts() as $post){ ?>
+
+        <?php foreach ($catPartners->posts() as $post){
+            $ids = array(
+                    "128" => "fa fa-desktop fa-4x gradien-partner",
+
+            );
+            ?>
             <div class="_box-33 _768-box-33 _480-box-100 _text-center _p-r-15 _p-l-15 _p-t-15 _p-b-15 ">
-                <?php switch ($post->id()){
+                <?php
+                echo "<i class='".$ids[$post->id()]."' aria-hidden='true'></i>";
+                /*switch ($post->id()){
+
                     case 128:
                         echo "<i class=\"fa fa-desktop fa-4x gradien-partner\" aria-hidden=\"true\"></i>";
                         break;
@@ -75,7 +84,7 @@ $boaTournage = $post->getById(135);
                     case 109:
                         echo "<i class=\"fa fa-heart-o fa-4x\" aria-hidden=\"true\"></i>";
                         break;
-                }
+                }*/
                 ?>
                 <p class="font-playfair-display _f-s-21 _m-t-10 _m-b-10"><b><?php echo $post->title()?></b></p>
                 <p class="font-robot _p-b-20"><?php echo $post->content() ?></p>

@@ -124,6 +124,18 @@
   //border: 1px solid red;
 }
 
+#container {
+  min-height: 100vh;
+  position: relative;
+}
+
+#main-content {
+  ._container:last-child {
+    padding-bottom: 200px;
+  }
+}
+
+
 .font-robot{
   font-family: 'Roboto', sans-serif;
 }
@@ -163,17 +175,22 @@ h2{
   background-color:#24164c;
   padding-top: 20px;
   padding-bottom: 20px;
+  position: absolute;
+  bottom: 0;
 }
 
 .contactForm{
   padding: 20px;
+  p{
+    margin-left: 25%;
+    text-align: left;
+    padding: 5px;
+  }
+  input._button {
+    height: auto;
+  }
 }
 
-.contactForm p{
-  margin-left: 25%;
-  text-align: left;
-  padding: 5px;
-}
 
 ._input{
   display: block;

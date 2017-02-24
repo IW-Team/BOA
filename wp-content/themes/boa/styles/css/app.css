@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Roboto:400");
-/* line 5, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,84 +21,84 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 /*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
-/* line 9, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+/* line 9, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 15, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+/* line 15, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 22, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+/* line 22, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 29, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+/* line 29, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 36, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+/* line 36, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 43, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+/* line 43, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 small {
   font-size: 80%;
 }
 
-/* line 49, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+/* line 49, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 sub,
 sup {
   font-size: 75%;
@@ -107,12 +107,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 57, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+/* line 57, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 61, ../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+/* line 61, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 sub {
   bottom: -0.25em;
 }
@@ -9655,73 +9655,89 @@ sub {
 }
 
 /* line 127, ../scss/app.scss */
+#container {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* line 133, ../scss/app.scss */
+#main-content ._container:last-child {
+  padding-bottom: 200px;
+}
+
+/* line 139, ../scss/app.scss */
 .font-robot {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 130, ../scss/app.scss */
+/* line 142, ../scss/app.scss */
 .font-playfair-display {
   font-family: 'Playfair Display', serif;
 }
 
-/* line 133, ../scss/app.scss */
+/* line 145, ../scss/app.scss */
 .img-circle {
   border-radius: 50%;
 }
 
-/* line 136, ../scss/app.scss */
+/* line 148, ../scss/app.scss */
 h2 {
   font-size: 30px;
 }
 
-/* line 139, ../scss/app.scss */
+/* line 151, ../scss/app.scss */
 .bg-light-grey {
   background-color: #ebebeb;
 }
 
-/* line 142, ../scss/app.scss */
+/* line 154, ../scss/app.scss */
 .header {
   background-color: #24164c;
 }
 
-/* line 146, ../scss/app.scss */
+/* line 158, ../scss/app.scss */
 .header ul {
   list-style: none;
 }
-/* line 148, ../scss/app.scss */
+/* line 160, ../scss/app.scss */
 .header ul a {
   text-decoration: none;
   color: #FFF;
   margin: 0 15px;
 }
-/* line 152, ../scss/app.scss */
+/* line 164, ../scss/app.scss */
 .header ul a:hover {
   color: #F49224;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-/* line 161, ../scss/app.scss */
+/* line 173, ../scss/app.scss */
 .footer {
   width: 100%;
   background-color: #24164c;
   padding-top: 20px;
   padding-bottom: 20px;
+  position: absolute;
+  bottom: 0;
 }
 
-/* line 168, ../scss/app.scss */
+/* line 182, ../scss/app.scss */
 .contactForm {
   padding: 20px;
 }
-
-/* line 172, ../scss/app.scss */
+/* line 184, ../scss/app.scss */
 .contactForm p {
   margin-left: 25%;
   text-align: left;
   padding: 5px;
 }
+/* line 189, ../scss/app.scss */
+.contactForm input._button {
+  height: auto;
+}
 
-/* line 178, ../scss/app.scss */
+/* line 195, ../scss/app.scss */
 ._input {
   display: block;
   width: 50%;
@@ -9738,14 +9754,14 @@ h2 {
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
-/* line 195, ../scss/app.scss */
+/* line 212, ../scss/app.scss */
 ._input:focus {
   border-color: #66afe9;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 
-/* line 202, ../scss/app.scss */
+/* line 219, ../scss/app.scss */
 ._content {
   display: block;
   width: 50%;
@@ -9760,14 +9776,14 @@ h2 {
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
-/* line 217, ../scss/app.scss */
+/* line 234, ../scss/app.scss */
 ._content:focus {
   border-color: #66afe9;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 
-/* line 224, ../scss/app.scss */
+/* line 241, ../scss/app.scss */
 ._button {
   height: 35px;
   display: block;
@@ -9777,19 +9793,19 @@ h2 {
   border: none;
 }
 
-/* line 233, ../scss/app.scss */
+/* line 250, ../scss/app.scss */
 ._button:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background-color: #4A148C;
 }
 
-/* line 237, ../scss/app.scss */
+/* line 254, ../scss/app.scss */
 .show {
   display: block;
 }
 
-/* line 242, ../scss/app.scss */
+/* line 259, ../scss/app.scss */
 .header .mobile-menu {
   background-color: #24164c;
   right: 15px;
@@ -9797,17 +9813,17 @@ h2 {
   position: absolute;
   z-index: 10;
 }
-/* line 248, ../scss/app.scss */
+/* line 265, ../scss/app.scss */
 .header .mobile-menu a {
   padding: 10px;
 }
-/* line 251, ../scss/app.scss */
+/* line 268, ../scss/app.scss */
 .header .mobile-menu li, .header .mobile-menu a {
   margin: 0;
   display: block;
   width: 100%;
 }
-/* line 255, ../scss/app.scss */
+/* line 272, ../scss/app.scss */
 .header .mobile-menu li:hover, .header .mobile-menu a:hover {
   background-color: #4D0577;
 }

@@ -35,15 +35,14 @@ class Contact_form
         echo '<p>Email* :</p>';
         echo '<input type="text" name="emailForm" class="_input" value="' . ( isset( $_POST["emailForm"] ) ? esc_attr( $_POST["emailForm"] ) : '' ) . '" size="40" />';
         echo '<p>Message* :</p>';
-        echo '<textarea class="_content" rows="5" cols="50" name="messageForm">' . ( isset( $_POST["messageForm"] ) ? esc_attr( $_POST["messageForm"] ) : '' ) . '</textarea><br/>';
-        echo '<input class="_button" type="submit" name="submitForm" value="Envoyer">';
+        echo '<textarea class="_content" rows="5" cols="50" name="messageForm">' . ( isset( $_POST["messageForm"] ) ? esc_attr( $_POST["messageForm"] ) : '' ) . '</textarea>';
+        echo '<input class="_button _m-t-20" type="submit" name="submitForm" value="Envoyer">';
         echo '</form>';
     }
 
     /**
      * @param $name
      * @param $email
-     * @param $subject
      * @param $message
      */
     public function validate_form( $name, $email, $message ) {
@@ -67,7 +66,6 @@ class Contact_form
     /**
      * @param $name
      * @param $email
-     * @param $subject
      * @param $message
      */
     public function send_email($name, $email, $message) {
@@ -118,4 +116,5 @@ class Contact_form
         return ob_get_clean();
     }
 }
+
 new Contact_form();

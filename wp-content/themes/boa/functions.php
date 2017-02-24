@@ -97,6 +97,7 @@ class Link_Widget extends WP_Widget {
     );
 
     public function widget( $args, $instance ) {
+        //@Todo : Refacto
         switch ($instance["title"]){
             case "facebook":
                 echo '<a href="'.$instance['url'].'"><i class="fa fa-facebook-square" aria-hidden="true"></i><a/>';
@@ -147,19 +148,6 @@ class Link_Widget extends WP_Widget {
 
 }
 $my_widget = new Link_Widget();
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ?>
